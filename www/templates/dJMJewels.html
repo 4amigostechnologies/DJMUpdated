@@ -1,0 +1,56 @@
+<ion-view title="DJM Jewels" id="page2" ng-controller="dJMJewelsCtrl">
+  <ion-content padding="false" class=" manual-remove-top-padding has-header">
+      
+
+
+          <ion-list>
+              <div ng-repeat="group in groups">
+                  <ion-item class="item-stable"
+                            ng-click="toggleGroup(group)"
+                            ng-class="{active: isGroupShown(group)}">
+                      <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+                      &nbsp;
+                      Gold rate Details.
+                  </ion-item>
+                  <ion-item class="item-accordion"
+                            ng-repeat="day in days "
+                            ng-show="isGroupShown(group)">
+                      {{day}}
+                  </ion-item>
+              </div>
+          </ion-list>
+
+
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="dJMJewels-slider3" style="width:100%;height:200px;">
+      <ion-slide-page id="dJMJewels-slide25" style="background:url(&quot;img/slide.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="dJMJewels-slide26" style="background:url(&quot;img/slide2.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+      <div class="list-mo">
+          <div id="dJMJewels-container3" class="thumb-contain">
+              <ion-list id="dJMJewels-list17">
+                  <ion-item class="item-thumbnail-left  class-bb" id="dJMJewels-list-item18" ng-repeat="scheme in schemes" ui-sref="tabsController.scheme({ schemeId: scheme.Id })" >
+                      <img src="http://localhost/DJMServices/img/{{scheme.icon}}">
+                  </ion-item>                  
+              </ion-list>
+          </div>
+          <!--<div id="dJMJewels-container4" class="thumb-contain">
+              <ion-list id="dJMJewels-list18">
+                  <ion-item class="item-thumbnail-left  class-ll" id="dJMJewels-list-item23" ui-sref="tabsController.luckyLakshmi">
+                      <img src="img/ll_button.jpg">
+                  </ion-item>
+                  <ion-item class="item-thumbnail-left  class-gp" id="dJMJewels-list-item25" ui-sref="tabsController.goldPiggyBank">
+                      <img src="img/gp_button.jpg">
+                  </ion-item>
+              </ion-list>
+          </div>-->
+      </div>
+    <div class="spacer" style="width: 320px; height: 20px;"></div>
+    <p>
+      <font>
+        <b>
+          <marquee>Today's Gold Rate: 2750/- per gram</marquee>
+        </b>
+      </font>
+    </p>
+  </ion-content>
+</ion-view>
