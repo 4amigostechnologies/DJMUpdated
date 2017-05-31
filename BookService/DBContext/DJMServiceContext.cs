@@ -28,5 +28,7 @@ namespace DJMServices.Models
 
         public System.Data.Entity.DbSet<DJMServices.Models.UserProfile> UserProfiles { get; set; }
 
+        public System.Data.Entity.DbSet<DJMServices.Models.BaleBangaraDatas> BhaleBangaraDetails { get; set; }
+
     }
 }
