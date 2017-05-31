@@ -1,0 +1,207 @@
+C:\Products\mobile\BookService-master\BookService\bin\BookService.dll.config
+C:\Products\mobile\BookService-master\BookService\bin\BookService.dll
+C:\Products\mobile\BookService-master\BookService\bin\BookService.pdb
+C:\Products\mobile\BookService-master\BookService\bin\Antlr3.Runtime.dll
+C:\Products\mobile\BookService-master\BookService\bin\EntityFramework.dll
+C:\Products\mobile\BookService-master\BookService\bin\EntityFramework.SqlServer.dll
+C:\Products\mobile\BookService-master\BookService\bin\Microsoft.Web.Infrastructure.dll
+C:\Products\mobile\BookService-master\BookService\bin\Newtonsoft.Json.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Net.Http.Formatting.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Helpers.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Http.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Http.WebHost.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Mvc.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Optimization.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Razor.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.Deployment.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.dll
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.Razor.dll
+C:\Products\mobile\BookService-master\BookService\bin\WebGrease.dll
+C:\Products\mobile\BookService-master\BookService\bin\Antlr3.Runtime.pdb
+C:\Products\mobile\BookService-master\BookService\bin\EntityFramework.xml
+C:\Products\mobile\BookService-master\BookService\bin\EntityFramework.SqlServer.xml
+C:\Products\mobile\BookService-master\BookService\bin\Newtonsoft.Json.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Net.Http.Formatting.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Helpers.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Http.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Http.WebHost.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Mvc.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Razor.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.Deployment.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.WebPages.Razor.xml
+C:\Products\mobile\BookService-master\BookService\bin\System.Web.Optimization.xml
+C:\Products\mobile\BookService-master\BookService\obj\Debug\BookService.Migrations.Initial.resources
+C:\Products\mobile\BookService-master\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
+C:\Products\mobile\BookService-master\BookService\obj\Debug\BookService.dll
+C:\Products\mobile\BookService-master\BookService\obj\Debug\BookService.pdb
+C:\Products\mobile\BookService-master\BookService\bin\Swashbuckle.Core.dll
+C:\Products\mobile\BookService-master\BookService\bin\WebActivatorEx.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\BookService.dll.config
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\BookService.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\BookService.pdb
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Antlr3.Runtime.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.SqlServer.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Newtonsoft.Json.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Swashbuckle.Core.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Net.Http.Formatting.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Helpers.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.WebHost.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Mvc.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Optimization.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Razor.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Razor.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\WebActivatorEx.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\WebGrease.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Antlr3.Runtime.pdb
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.SqlServer.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\Newtonsoft.Json.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Net.Http.Formatting.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Helpers.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.WebHost.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Mvc.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Razor.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Razor.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\bin\System.Web.Optimization.xml
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\obj\Debug\BookService.Migrations.Initial.resources
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\obj\Debug\BookService.dll
+C:\Users\Shiva\Desktop\4Amigos.Data.WebAPI\BookService\obj\Debug\BookService.pdb
+C:\4Amigos.Data.WebAPI\BookService\bin\4Amigos.Data.WebAPI.dll.config
+C:\4Amigos.Data.WebAPI\BookService\bin\4Amigos.Data.WebAPI.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\4Amigos.Data.WebAPI.pdb
+C:\4Amigos.Data.WebAPI\BookService\bin\Antlr3.Runtime.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.SqlServer.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\Microsoft.Web.Infrastructure.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\Newtonsoft.Json.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\Swashbuckle.Core.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Net.Http.Formatting.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Cors.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Helpers.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.Cors.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.WebHost.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Mvc.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Optimization.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Razor.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Deployment.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Razor.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\WebActivatorEx.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\WebGrease.dll
+C:\4Amigos.Data.WebAPI\BookService\bin\Antlr3.Runtime.pdb
+C:\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\EntityFramework.SqlServer.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\Newtonsoft.Json.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Net.Http.Formatting.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Helpers.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.Cors.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Http.WebHost.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Mvc.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Razor.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Deployment.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.WebPages.Razor.xml
+C:\4Amigos.Data.WebAPI\BookService\bin\System.Web.Optimization.xml
+C:\4Amigos.Data.WebAPI\BookService\obj\Debug\DJMServices.Migrations.Initial.resources
+C:\4Amigos.Data.WebAPI\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
+C:\4Amigos.Data.WebAPI\BookService\obj\Debug\4Amigos.Data.WebAPI.dll
+C:\4Amigos.Data.WebAPI\BookService\obj\Debug\4Amigos.Data.WebAPI.pdb
+C:\4Amigos.Data.WebAPI\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll.config
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.pdb
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Antlr3.Runtime.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\EntityFramework.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\EntityFramework.SqlServer.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Newtonsoft.Json.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Swashbuckle.Core.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Net.Http.Formatting.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Cors.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Helpers.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.Cors.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.WebHost.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Mvc.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Razor.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\WebActivatorEx.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\WebGrease.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Antlr3.Runtime.pdb
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\EntityFramework.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\EntityFramework.SqlServer.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Newtonsoft.Json.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Net.Http.Formatting.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Helpers.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.Cors.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Http.WebHost.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Mvc.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Razor.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.xml
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\DJMServices.Migrations.Initial.resources
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.dll
+C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.pdb
+D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll.config
+D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll
+D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.pdb
+D:\Projects\DJMBeta3\BookService\bin\Antlr3.Runtime.dll
+D:\Projects\DJMBeta3\BookService\bin\EntityFramework.dll
+D:\Projects\DJMBeta3\BookService\bin\EntityFramework.SqlServer.dll
+D:\Projects\DJMBeta3\BookService\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\DJMBeta3\BookService\bin\Newtonsoft.Json.dll
+D:\Projects\DJMBeta3\BookService\bin\Swashbuckle.Core.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Net.Http.Formatting.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Cors.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Helpers.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.Cors.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.WebHost.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Mvc.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Razor.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.dll
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.dll
+D:\Projects\DJMBeta3\BookService\bin\WebActivatorEx.dll
+D:\Projects\DJMBeta3\BookService\bin\WebGrease.dll
+D:\Projects\DJMBeta3\BookService\bin\Antlr3.Runtime.pdb
+D:\Projects\DJMBeta3\BookService\bin\EntityFramework.xml
+D:\Projects\DJMBeta3\BookService\bin\EntityFramework.SqlServer.xml
+D:\Projects\DJMBeta3\BookService\bin\Newtonsoft.Json.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Net.Http.Formatting.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Helpers.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.Cors.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Http.WebHost.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Mvc.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Razor.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.xml
+D:\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.xml
+D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
+D:\Projects\DJMBeta3\BookService\obj\Debug\DJMServices.Migrations.Initial.resources
+D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
+D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.dll
+D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.pdb
