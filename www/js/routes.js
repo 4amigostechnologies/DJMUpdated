@@ -77,6 +77,17 @@ angular.module('app.routes', [])
     templateUrl: 'templates/welcome.html',
     controller: 'welcomeCtrl'
   })
+.state('register', {
+    url: '/register',
+    templateUrl: 'templates/register.html',
+    controller: 'registerCtrl'
+})
+
+.state('underDevelopment', {
+    url: '/underDevelopment',
+    templateUrl: 'templates/underDevelopment.html',
+    controller: 'underDevelopmentCtrl'
+})
 
   
 
