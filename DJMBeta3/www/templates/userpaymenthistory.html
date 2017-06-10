@@ -1,0 +1,22 @@
+<ion-view title="History Details" id="page17">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="cardDetails-card23">
+      <ion-list id="cardDetails-list10">
+          
+              <div ng-repeat="historyinfo in userHistoryInformation">
+                  
+                      <ion-item style="text-align:center" id="cardDetails-list-item39">{{$index+1}}</ion-item>
+                      <ion-item id="cardDetails-list-item39">PaymentID : {{historyinfo.PaymentId}}</ion-item>
+                      <ion-item id="cardDetails-list-item40">Scheme Name : {{historyinfo.Name}} </ion-item>
+                      <ion-item id="cardDetails-list-item41">Card NUmber : {{historyinfo.CardNo}} </ion-item>
+                      <ion-item id="cardDetails-list-item42">Month : {{historyinfo.Month}} </ion-item>
+                      <ion-item id="cardDetails-list-item43">PaymentMode : {{historyinfo.PaymentMode}}</ion-item>
+                      <ion-item id="cardDetails-list-item44">Amount : {{historyinfo.Amount}}</ion-item>
+                  
+                </div>
+          
+      </ion-list>
+      
+    </div>
+  </ion-content>
+</ion-view>

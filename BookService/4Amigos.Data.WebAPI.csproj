@@ -156,13 +156,19 @@
     <Compile Include="Controllers\AuthorsController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\JewelRatesController.cs" />
+    <Compile Include="Controllers\PaymentHistoryController.cs" />
     <Compile Include="Controllers\SchemesController.cs" />
+    <Compile Include="Controllers\BaleBangaraController.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
+    <Compile Include="Controllers\UserSubscriptionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PaymentHistory.cs" />
     <Compile Include="Models\Scheme.cs" />
+    <Compile Include="Models\SchemeDetail.cs" />
     <Compile Include="Models\SchemeParameters.cs" />
+    <Compile Include="Models\BaleBangaraDatas.cs" />
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Models\JewelRate.cs" />
     <Compile Include="Models\Migrations\201406131812509_Initial.cs">
@@ -181,6 +187,8 @@
     <Compile Include="Models\BookDetailDTO.cs" />
     <Compile Include="Models\BookDTO.cs" />
     <Compile Include="DBContext\DJMServiceContext.cs" />
+    <Compile Include="Models\UserSchemeInfo.cs" />
+    <Compile Include="Models\UserSchemeSubscriptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

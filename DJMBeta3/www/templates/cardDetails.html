@@ -1,0 +1,27 @@
+<ion-view title="card Details" id="page16" >
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="cardDetails-card23">
+      <ion-list id="cardDetails-list10">
+          <div ng-repeat="schemeinfo in userSchemesSubscriptionData">
+              <ion-item class="item-avatar item-icon-right energized" id="cardDetails-list-item30">
+                  <img src="img/Lbw7eXLQiSluh1cN0zz8_static_qr_code_without_logo.jpg">
+                  <h2energized>
+                      Card Number
+                      <p>{{schemeinfo.SchemeName}}</p>
+                      <i class="icon ion-android-options"></i>
+                  </h2energized>
+              </ion-item>
+
+              <ion-item id="cardDetails-list-item39">Card Nick Name : {{schemeinfo.CardLuckyName}}</ion-item>
+              <ion-item id="cardDetails-list-item40">Months Completed : {{schemeinfo.MonthsCompleted}} </ion-item>
+              <ion-item id="cardDetails-list-item41">Months Pending : {{schemeinfo.MonthsPending}} </ion-item>
+              <ion-item id="cardDetails-list-item42">Amount Due : {{schemeinfo.DueAmount}} </ion-item>
+              <ion-item id="cardDetails-list-item43">Due Date : {{schemeinfo.DueDate}}</ion-item>
+          </div>
+      </ion-list>
+      <button id="cardDetails-button55" class="button button-assertive button-small button-block">Pay</button>
+      <button id="cardDetails-button56" class="button button-assertive button-small button-block" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">Payment History</button>
+      <div id="cardDetails-button-bar8" class="button-bar"></div>
+    </div>
+  </ion-content>
+</ion-view>

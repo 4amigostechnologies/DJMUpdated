@@ -157,11 +157,11 @@ C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\Sy
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.xml
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.xml
-C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\DJMServices.Migrations.Initial.resources
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.dll
 C:\Users\Shiva\Documents\Visual Studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.pdb
+C:\Users\Shiva\documents\visual studio 2015\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
 D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll.config
 D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.dll
 D:\Projects\DJMBeta3\BookService\bin\4Amigos.Data.WebAPI.pdb
@@ -200,7 +200,6 @@ D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.xml
 D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Deployment.xml
 D:\Projects\DJMBeta3\BookService\bin\System.Web.WebPages.Razor.xml
 D:\Projects\DJMBeta3\BookService\bin\System.Web.Optimization.xml
-D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csprojResolveAssemblyReference.cache
 D:\Projects\DJMBeta3\BookService\obj\Debug\DJMServices.Migrations.Initial.resources
 D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.csproj.GenerateResource.Cache
 D:\Projects\DJMBeta3\BookService\obj\Debug\4Amigos.Data.WebAPI.dll

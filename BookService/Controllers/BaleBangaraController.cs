@@ -24,6 +24,14 @@ namespace Amigos.Data.WebAPI.Controllers
             return db.BhaleBangaraDetails.Where(x => x.SchemeId == id);
         }
 
-        
+        [Route("BaleBangara/{userid}")]
+        [HttpGet]
+
+        public IEnumerable<BaleBangaraDatas> GetBaleBangaraUserDetails(Guid id)
+        {
+            return db.BhaleBangaraDetails.Where(x => x.SchemeId == id);
+        }
+
+
     }
 }

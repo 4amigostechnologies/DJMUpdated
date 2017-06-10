@@ -1,22 +1,26 @@
 <ion-view title="Welcome" hide-nav-bar="true" id="page7" style="background-color:#DA191C;">
+
   <ion-content padding="false" class=" manual-remove-top-padding" scroll="false">
+
     <ion-slides disable-side-menu-drag="" options="{'loop': false}" slider="slider6" delegate-handle="slider6" id="welcome-slider6" style="width:100%;height:100%;">
       <ion-slide-page id="welcome-slide215">
         <div class="spacer" style="width: 320px; height: 40px;"></div>
-        <div>
-          <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
-        </div>
-        <h3 id="welcome-heading16" style="color:#D2AE6D;text-align:center;">DJM Jewels</h3>
-        <div class="list card" id="welcome-card21">
-          <div class="item item-body container-color" id="welcome-list-item-container14">
-            <button id="welcome-button46" class="button button-positive  button-block icon-left ion-social-facebook">Connect with Facebook</button>
-            <button id="welcome-button47" class="button button-assertive  button-block button-outline icon-left ion-social-googleplus">Connect with Google+</button>
-            <div id="welcome-button-bar7" class="button-bar">
-              <a ui-sref="login" id="welcome-button43" class="button button-assertive  button-block">LOG IN</a>
-              <a ui-sref="tabsController.dJMJewels" id="welcome-button44" class="button button-assertive  button-block">I'M A VISITOR</a>
-            </div>
+          <div ng-controller="welcomeCtrl">
+              <div>
+                  <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+              </div>
+              <h3 id="welcome-heading16" style="color:#D2AE6D;text-align:center;">DJM Jewels</h3>
+              <div class="list card" id="welcome-card21">
+                  <div class="item item-body container-color" id="welcome-list-item-container14">
+                      <button id="welcome-button46" ui-sref="underDevelopment" class="button button-positive  button-block icon-left ion-social-facebook">Connect with Facebook</button>
+                      <button id="welcome-button47" ui-sref="underDevelopment" class="button button-assertive  button-block button-outline icon-left ion-social-googleplus">Connect with Google+</button>
+                      <div id="welcome-button-bar7" class="button-bar">
+                          <a ui-sref="login" id="welcome-button43" class="button button-assertive  button-block">LOG IN</a>
+                          <a ui-sref="register" ng-click="visitor_login()" id="welcome-button44" class="button button-assertive  button-block">I'M A VISITOR</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </ion-slide-page>
     </ion-slides>
   </ion-content>

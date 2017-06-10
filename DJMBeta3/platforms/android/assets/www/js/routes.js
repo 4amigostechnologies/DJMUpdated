@@ -7,15 +7,15 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
-
-      .state('tabsController.dJMJewels', {
+   .state('tabsController.dJMJewels', {
     url: '/home',
     views: {
       'tab1': {
         templateUrl: 'templates/dJMJewels.html',
-        controller: 'dJMJewelsCtrl'
+        controller: 'dJMJewelsCtrl',
+          resolve: {              
+              
+          }
       }
     }
   })
@@ -32,13 +32,48 @@ angular.module('app.routes', [])
                       return post.get({'schemeId':$stateParams.schemeId}).$promise; 
                     },
                   schemeParameter1: function ($resource, $stateParams) {
-                  var post = $resource('http://localhost/DJMServices/schemes/:schemeId/Parameters',{schemeId:'@schemeId'});
-                  return post.query({'schemeId':$stateParams.schemeId}).$promise; 
-                }
+                      var post = $resource('http://localhost/DJMServices/schemes/:schemeId/Parameters',{schemeId:'@schemeId'});
+                      return post.query({ 'schemeId': $stateParams.schemeId }).$promise;
+                  }
+
         }
     }
     }
   })
+.state('tabsController.userSchemeSubscriptionDetails', {
+    url: '/userSchemeSubscriptionDetails/:subscriptionId/:UserId',
+    views: {
+        'tab2': {
+            templateUrl: 'templates/cardDetails.html',
+            controller: 'UserSchemeDetailsCtrl',
+            resolve: {
+                userSchemesSubscriptionInfo1: function ($resource, $stateParams) {
+                    var post = $resource('http://localhost/DJMServices/schemeSubscriptions/:subscriptionId/:UserId', { subscriptionId: '@subscriptionId', UserId:'@UserId' });
+                    return post.query({ 'subscriptionId': $stateParams.subscriptionId, 'UserId': $stateParams.UserId }).$promise;
+                }
+            }
+        }
+    }
+})
+
+.state('tabsController.userpaymenthistory', {
+    url: '/userpaymenthistory/:UserId',  
+    views: {
+      'tab3': {
+          templateUrl: 'templates/userpaymenthistory.html',
+          controller: 'historyCtrl',
+          resolve: {
+              userHistoryInformation: function ($resource, $stateParams) {
+                  var post = $resource('http://localhost/DJMServices/PaymentHistory/:UserId', {UserId: '@UserId' });
+                  return post.query({'UserId': $stateParams.UserId }).$promise;
+              }
+          }
+      }
+  }
+
+
+
+})
 
   .state('tabsController.contactUs', {
     url: '/contactus',
@@ -78,17 +113,11 @@ angular.module('app.routes', [])
     controller: 'welcomeCtrl'
   })
 
-  
-
-  // .state('tabsController.luckyLakshmi', {
-  //   url: '/luckylakshmi',
-  //   views: {
-  //     'tab1': {
-  //       templateUrl: 'templates/luckyLakshmi.html',
-  //       controller: 'luckyLakshmiCtrl'
-  //     }
-  //   }
-  // }) 
+   .state('register', {
+     url: '/register',
+     templateUrl: 'templates/register.html',
+     controller: 'registerCtrl'
+   }) 
   .state('fAQ', {
     url: '/faq',
     templateUrl: 'templates/fAQ.html',
@@ -104,6 +133,11 @@ angular.module('app.routes', [])
       }
     }
   })
+    .state('underDevelopment', {
+        url: '/underDevelopment',
+        templateUrl: 'templates/underDevelopment.html',
+        controller: 'underDevelopmentCtrl'
+    })
 
 $urlRouterProvider.otherwise('/welcome')
 

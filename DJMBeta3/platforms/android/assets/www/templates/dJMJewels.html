@@ -27,22 +27,30 @@
     </ion-slides>
       <div class="list-mo">
           <div id="dJMJewels-container3" class="thumb-contain">
-              <ion-list id="dJMJewels-list17">
-                  <ion-item class="item-thumbnail-left  class-bb" id="dJMJewels-list-item18" ng-repeat="scheme in schemes" ui-sref="tabsController.scheme({ schemeId: scheme.Id })" >
-                      <img src="http://localhost/DJMServices/img/{{scheme.icon}}">
-                  </ion-item>                  
-              </ion-list>
-          </div>
-          <!--<div id="dJMJewels-container4" class="thumb-contain">
-              <ion-list id="dJMJewels-list18">
-                  <ion-item class="item-thumbnail-left  class-ll" id="dJMJewels-list-item23" ui-sref="tabsController.luckyLakshmi">
-                      <img src="img/ll_button.jpg">
-                  </ion-item>
-                  <ion-item class="item-thumbnail-left  class-gp" id="dJMJewels-list-item25" ui-sref="tabsController.goldPiggyBank">
-                      <img src="img/gp_button.jpg">
-                  </ion-item>
-              </ion-list>
-          </div>-->
+            <ion-list id="cardDetails-list10">
+                <ion-item class="item-avatar item-icon-right energized" 
+                          ng-repeat="userScheme in userSchemesSubscriptions" 
+                          id="cardDetails-list-item30"
+                          ui-sref="tabsController.userSchemeSubscriptionDetails({ subscriptionId: userScheme.SubscriptionId, UserId: {{UserID}} })">
+
+                    <img src="img/Lbw7eXLQiSluh1cN0zz8_static_qr_code_without_logo.jpg">
+                    <h2energized>
+                        {{userScheme.SchemeName}}
+                       
+                        <p>{{userScheme.SchemeMemberCode}} </p>
+                        <i class="icon ion-android-options"></i>
+                    </h2energized>
+                </ion-item>
+            </ion-list>
+            <ion-list id="dJMJewels-list17">
+                <ion-item class="item-thumbnail-left   class-bb" id="dJMJewels-list-item18" 
+                          ng-repeat="scheme in schemes" 
+                          ui-sref="tabsController.scheme({ schemeId: scheme.Id })">
+                    <img src="http://localhost/DJMServices/img/{{scheme.icon}}">
+                </ion-item>
+            </ion-list>
+        </div>
+          
       </div>
     <div class="spacer" style="width: 320px; height: 20px;"></div>
     <p>
