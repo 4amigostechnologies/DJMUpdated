@@ -12,15 +12,16 @@ function ($scope,$http,$stateParams) {
             }
         };
 
-        $http.post('', $scope.user, config)
+        $http.post('http://djmwebapi.djmjewels.com/UserProfiles', $scope.user, config)
         .success(function (data, status, headers, config) {
-            $scope.PostDataResponse = data;
+            $scope.errMessage = "register success";
+            console.log(data);
         })
         .error(function (data, status, header, config) {
-            $scope.ResponseDetails = "Data: " + data +
-                "<hr />status: " + status +
-                "<hr />headers: " + header +
-                "<hr />config: " + config;
+            console.log(data);
+            console.log(status);
+            console.log(header);
+            console.log(config);
         });
     
         

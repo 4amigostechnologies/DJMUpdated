@@ -4,15 +4,15 @@
       <ion-list id="register-list3">
         <label class="item item-input" id="register-input8">
           <span class="input-label">First Name</span>
-          <input type="text" ng-model="user.firstName" placeholder="Enter your first name" required>
+          <input type="text" ng-model="user.FirstName" placeholder="Enter your first name" required>
         </label>
         <label class="item item-input" id="register-input11">
           <span class="input-label">Last Name</span>
-          <input type="text" ng-model="user.lastName" placeholder="Enter your last name" required>
+          <input type="text" ng-model="user.LastName" placeholder="Enter your last name" required>
         </label>
         <label class="item item-select" id="register-select1">
           <span class="input-label">Gender</span>
-          <select ng-model="user.gender" required>
+          <select ng-model="user.Gender" required>
             <option value="">Please Select</option>
             <option value="M">Male</option>
             <option value="F">Female</option>
@@ -20,7 +20,7 @@
         </label>
         <label class="item item-input" id="register-input9">
           <span class="input-label">Email</span>
-          <input type="email" ng-model="user.email" placeholder="Enter your email" required>
+          <input type="email" ng-model="user.EmailId" placeholder="Enter your email" required>
         </label>
         <label class="item item-input" id="register-input13">
           <span class="input-label">Mobile</span>
@@ -28,7 +28,7 @@
         </label>
         <label class="item item-input" id="register-input10">
           <span class="input-label">Password</span>
-          <input type="password" ng-model="user.password" placeholder="enter password">
+          <input type="password" ng-model="user.Password" placeholder="enter password">
         </label>
         <label class="item item-input" id="register-input14">
           <span class="input-label">Confirm Password</span>
@@ -36,15 +36,15 @@
         </label>
           <label class="item item-input" id="register-input15">
               <span class="input-label">Address</span>
-              <input type="text" ng-model="user.address" placeholder="enter your address">
+              <input type="text" ng-model="user.Address" placeholder="enter your address">
           </label>
           <label class="item item-input" id="register-input16">
               <span class="input-label">City</span>
-              <input type="text" ng-model="user.city" placeholder="enter your city">
+              <input type="text" ng-model="user.City" placeholder="enter your city">
           </label>
           <label class="item item-input" id="register-input17">
               <span class="input-label">PostalCode</span>
-              <input type="number" ng-model="user.postalCode" placeholder="enter your pincode">
+              <input type="number" ng-model="user.PostalCode" placeholder="enter your pincode">
           </label>
           <label class="item item-input" id="register-input21">
               <span class="input-label">DateOfBirth</span>
@@ -52,33 +52,33 @@
           </label>
           <label class="item item-select" id="register-select2">
               <span class="input-label">Maritial Status</span>
-              <select ng-model="user.marriedStatus">
-                  <option value="Single">Single</option>
-                  <option value="Married">Married</option>
+              <select ng-model="user.MaritialStatus">
+                  <option ng-value="false">Single</option>
+                  <option ng-value="true">Married</option>
                   
               </select>
-
+              
           </label>
-          <div ng-if="user.marriedStatus=='Married'">
+          <div ng-if="user.MaritialStatus=='true'">
               <label class="item item-input" id="register-input23">
                   <span class="input-label">SpouceName</span>
-                  <input type="text" ng-model="user.spouceName" placeholder="enter your spouce name">
+                  <input type="text" ng-model="user.SpouceName" placeholder="enter your spouce name">
               </label>
               <label class="item item-input" id="register-input24">
                   <span class="input-label">Spouce DOB</span>
-                  <input type="date" ng-model="user.spouceDOB" placeholder="enter spouce DOB">
+                  <input type="date" ng-model="user.SpouceDOB" placeholder="enter spouce DOB">
               </label>
               <label class="item item-input" id="register-input25">
                   <span class="input-label">Marriage Date</span>
-                  <input type="date" ng-model="user.marriageDate" placeholder="Please enter marriage date">
+                  <input type="date" ng-model="user.MarriageDate" placeholder="Please enter marriage date">
               </label>
           </div>
           <label class="item item-input" id="register-input26">
               <span class="input-label">Profile Image URL</span>
-              <input type="url" ng-model="user.profileURL" placeholder="">
+              <input type="url" ng-model="user.ProfileURL" placeholder="">
           </label>
 
-          
+     
       </ion-list>
         <label>{{errMessage}}</label>
       <button type="submit" id="register-button48" class="button button-assertive button-block">Sign up</button>
