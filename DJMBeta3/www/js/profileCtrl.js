@@ -8,5 +8,6 @@ function ($scope, $stateParams, loginService) {
     $scope.city = user.City + " , " + user.State;
     $scope.email = user.EmailId;
     $scope.phoneNo = user.PhoneNo;
+    $scope.UserID = 1135;
 
 }]);

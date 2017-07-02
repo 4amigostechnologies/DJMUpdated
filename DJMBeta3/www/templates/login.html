@@ -1,30 +1,28 @@
+<ion-view title="Login" hide-nav-bar="true" id="page6">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div ng-app="myapp" ng-controller="loginCtrl">
+            <form id="login-form1" class="list">
+                <div>
+                    <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+                </div>
 
-<ion-view title="Login" id="page6" hide-nav-bar="true" style="background-color:#DA191C;">
-    <ion-content padding="true" class="has-header">
-        <div>
-            <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+                <div class="spacer" style="width: 300px; height: 12px;"></div>
+                <ion-list id="login-list2">
+                    <label class="item item-input item-stacked-label login-boldtext" id="login-input1" name="username">
+                        <span class="input-label">User Name</span>
+                        <input type="text" ng-model="mobile" placeholder="Enter Mobile Number">
+                    </label>
+                    <label class="item item-input item-stacked-label login-boldtext" id="login-input2" name="password">
+                        <span class="input-label">Password</span>
+                        <input type="password" ng-model="password" placeholder="Enter Password">
+                    </label>
+                </ion-list>
+                <div class="spacer" style="height: 40px;"></div>
+                <a id="login-button1" class="button button-assertive button-block" ng-click="ButtonClick()">LOG IN</a>
+                <a ui-sref="register" id="login-button49" class="button button-assertive button-block">NEW USER REGISTRATION</a>
+                {{errmessage}}
+            </form>
+            <div id="login-button-bar1" class="button-bar"></div>
         </div>
-           <div ng-app="myapp" ng-controller="loginCtrl">
-                <form id="login-form1" class="list">
-                    <!--<div class="spacer" style="height: 50px;"></div>-->
-                    <ion-list id="login-list2">
-                        <label class="item item-input item-stacked-label login-boldtext" id="login-input1" name="username">
-                            <span class="input-label" style="color:white;border:none">User Name</span>
-                            <input type="text" ng-model="mobile" placeholder="Enter Mobile Number">
-                        </label>
-                        <label class="item item-input item-stacked-label login-boldtext" id="login-input2" name="password">
-                            <span class="input-label" style="color:white;border:none">Password</span>
-                            <input type="password" ng-model="password" placeholder="Enter Password">
-                        </label>
-                    </ion-list>
-                    <div class="spacer" style="height: 40px;"></div>
-                    <div>
-                        <button id="login-button10" class="button button-assertive  button-block" ng-click="ButtonClick()">LOGIN</button>
-
-                    </div>
-                    {{errmessage}}
-                </form>
-                <div id="login-button-bar1" class="button-bar"></div>
-            </div>
 </ion-content>
 </ion-view>

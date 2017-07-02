@@ -1,57 +1,34 @@
-﻿<ion-view title="Profile" id="page5">
-  <ion-content padding="true" class="has-header">
-    <div class="profile-image">
-      <img src="img/UnOgQi7bShyIC9UJWAub_11390074_852598771500103_5398503957573333216_n.jpg" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <h4 id="profile-heading9" style="color:#000000;font-weight:600;text-align:center;">{{profileName}}</h4>
-    <div>
-
-      <title>ProfilePage</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <style>
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-      </style>
-
-
-      <!-- Page Container -->
-      <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-          <!-- Left Column -->
-          <div class="w3-third">
-
-            <div class="w3-container">
-              <p>
-                <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Buisness Man</p>
-              <p>
-                <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{city}}</p>
-              <p>
-                <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>{{email}}</p>
-              <p>
-                <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>{{phoneNo}}</p>
-
-              <!-- End Page Container -->
-            </div>
-
-            <footer class="w3-container w3-teal w3-center w3-margin-top">
-              <p>VIP Member</p>
-
-            </footer>
-
-
-
-          </div>
+﻿<ion-view title="Profile" id="page18">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="profile-list5">
+            <ion-item class="item-thumbnail-left calm" id="profile-list-item11">
+                <img src="img/zWeh57yQRPOaoasdMlBs_user_male2-512.png">
+                <h2calm>
+                    {{profileName}}
+                    <p>{{phoneNo}}</p>
+                </h2calm>
+            </ion-item>
+        </ion-list>
+        <div id="profile-button-bar9" class="button-bar">
+            <button id="profile-button60" class="button button-assertive button-small">Edit Profile</button>
         </div>
-      </div>
-    </div>
-    <div id="profile-button-bar6" class="button-bar">
-      <button id="profile-button36" class="button button-assertive button-small button-block">Change Personal Information</button>
-    </div>
-  </ion-content>
+        <div class="list card" id="profile-card25">
+            <ion-item class="item-icon-right" id="profile-list-item22">
+                My Cards
+                <i class="icon ion-card"></i>
+            </ion-item>
+            <ion-item class="item-icon-right" id="profile-list-item26" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">
+                My Payments
+                <i class="icon ion-cash"></i>
+            </ion-item>
+            <ion-item class="item-icon-right" id="profile-list-item32" ui-sref="welcome()">
+                Join New Scheme
+                <i class="icon ion-android-checkbox-outline"></i>
+            </ion-item>
+            <ion-item class="item-icon-right" id="profile-list-item33">
+                Invite
+                <i class="icon ion-android-contacts"></i>
+            </ion-item>
+        </div>
+    </ion-content>
 </ion-view>
