@@ -28,11 +28,11 @@ angular.module('app.routes', [])
         controller: 'schemesCtrl',
          resolve: {
                   schemeDetails1:  function ($resource, $stateParams) {
-                      var post = $resource('http://localhost/DJMServices/schemes/:schemeId',{schemeId:'@schemeId'});
+                      var post = $resource('http://djmwebapi.djmjewels.com/schemes/:schemeId', { schemeId: '@schemeId' });
                       return post.get({'schemeId':$stateParams.schemeId}).$promise; 
                     },
                   schemeParameter1: function ($resource, $stateParams) {
-                      var post = $resource('http://localhost/DJMServices/schemes/:schemeId/Parameters',{schemeId:'@schemeId'});
+                      var post = $resource('http://djmwebapi.djmjewels.com/schemes/:schemeId/Parameters', { schemeId: '@schemeId' });
                       return post.query({ 'schemeId': $stateParams.schemeId }).$promise;
                   }
 
@@ -48,7 +48,7 @@ angular.module('app.routes', [])
             controller: 'UserSchemeDetailsCtrl',
             resolve: {
                 userSchemesSubscriptionInfo1: function ($resource, $stateParams) {
-                    var post = $resource('http://localhost/DJMServices/schemeSubscriptions/:subscriptionId/:UserId', { subscriptionId: '@subscriptionId', UserId:'@UserId' });
+                    var post = $resource('http://djmwebapi.djmjewels.com/schemeSubscriptions/:subscriptionId/:UserId', { subscriptionId: '@subscriptionId', UserId: '@UserId' });
                     return post.query({ 'subscriptionId': $stateParams.subscriptionId, 'UserId': $stateParams.UserId }).$promise;
                 }
             }
@@ -64,7 +64,7 @@ angular.module('app.routes', [])
           controller: 'historyCtrl',
           resolve: {
               userHistoryInformation: function ($resource, $stateParams) {
-                  var post = $resource('http://localhost/DJMServices/PaymentHistory/:UserId', {UserId: '@UserId' });
+                  var post = $resource('http://djmwebapi.djmjewels.com/PaymentHistory/:UserId', { UserId: '@UserId' });
                   return post.query({'UserId': $stateParams.UserId }).$promise;
               }
           }
@@ -137,6 +137,11 @@ angular.module('app.routes', [])
         url: '/underDevelopment',
         templateUrl: 'templates/underDevelopment.html',
         controller: 'underDevelopmentCtrl'
+    })
+    .state('dJMJewels_visitor', {
+        url: '/dJMJewels_visitor',
+        templateUrl: 'templates/dJMJewels_visitor.html',
+        controller: 'dJMJewelsCtrl_visitor'
     })
 
 $urlRouterProvider.otherwise('/welcome')

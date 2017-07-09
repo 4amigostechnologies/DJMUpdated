@@ -1,4 +1,4 @@
-<ion-view title="Register" id="page13" ng-controller="registerCtrl">
+<ion-view title="Register" id="page13" hide-nav-bar="true" ng-controller="registerCtrl">
   <ion-content padding="true" class="has-header">
     <form ng-submit="register()" id="register-form4" class="list">
       <ion-list id="register-list3">
@@ -24,7 +24,7 @@
         </label>
         <label class="item item-input" id="register-input13">
           <span class="input-label">Mobile</span>
-          <input type="tel" ng-model="user.mobile" placeholder="Enter your mobile No.">
+          <input type="tel" ng-model="user.PhoneNo" placeholder="Enter your mobile No.">
         </label>
         <label class="item item-input" id="register-input10">
           <span class="input-label">Password</span>
@@ -34,7 +34,8 @@
           <span class="input-label">Confirm Password</span>
           <input type="password" ng-model="user.cnfPassword" placeholder="Re-enter password">
         </label>
-          <label class="item item-input" id="register-input15">
+          {{password_error}}
+          <label class="item item-input" id="register-input15" ng-focus="validatePassword()">
               <span class="input-label">Address</span>
               <input type="text" ng-model="user.Address" placeholder="enter your address">
           </label>
@@ -52,14 +53,14 @@
           </label>
           <label class="item item-select" id="register-select2">
               <span class="input-label">Maritial Status</span>
-              <select ng-model="user.MaritialStatus">
+              <select ng-model="user.MaritalStatus" ng-change="maritialstatus()">
                   <option ng-value="false">Single</option>
                   <option ng-value="true">Married</option>
                   
               </select>
               
           </label>
-          <div ng-if="user.MaritialStatus=='true'">
+          <div ng-if="user.MaritalStatus=='true'">
               <label class="item item-input" id="register-input23">
                   <span class="input-label">SpouceName</span>
                   <input type="text" ng-model="user.SpouceName" placeholder="enter your spouce name">
@@ -73,11 +74,7 @@
                   <input type="date" ng-model="user.MarriageDate" placeholder="Please enter marriage date">
               </label>
           </div>
-          <label class="item item-input" id="register-input26">
-              <span class="input-label">Profile Image URL</span>
-              <input type="url" ng-model="user.ProfileURL" placeholder="">
-          </label>
-
+          
      
       </ion-list>
         <label>{{errMessage}}</label>

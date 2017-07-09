@@ -1,13 +1,13 @@
 angular.module('history', ['ngResource'])
-    .controller('historyCtrl', ['$scope', '$http', '$stateParams', 'userHistoryInformation',
+    .controller('historyCtrl', ['$scope', '$http', '$stateParams', '$state','userHistoryInformation',
 function ($scope,$http, $stateParams, $state, userHistoryInformation) {
-    // $scope.userHistoryInformation = userHistoryInformation;
-    $http.get("http://djmwebapi.djmjewels.com/PaymentHistory/1135").then(function (response) {
+     $scope.userHistoryInformation = userHistoryInformation;
+    //$http.get("http://djmwebapi.djmjewels.com/PaymentHistory/1135").then(function (response) {
 
-        $scope.userHistoryInformation = response.data;
-    });
+    //    $scope.userHistoryInformation = response.data;
+    //});
 
 
 
-    // console.log($scope.userHistoryInformation);
+     console.log($scope.userHistoryInformation);
 }]);
