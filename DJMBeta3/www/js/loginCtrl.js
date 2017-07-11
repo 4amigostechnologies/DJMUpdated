@@ -2,7 +2,7 @@ angular.module('login', ['ngResource'])
    .controller('loginCtrl', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
       // You can include any angular dependencies as parameters for this function
       // TIP: Access Route Parameters for your page via $stateParams.parameterName
-      function ($scope, $http, $window, $state, $stateParams, $location, loginService) {
+      function ($scope,$rootScope, $http, $window, $state, $stateParams, $location, loginService) {
           var app = angular.module('myapp', []);
           //app.controller('myCtrl', function ($scope, $http, $window) {
           console.log("hi");
@@ -17,9 +17,12 @@ angular.module('login', ['ngResource'])
                          $scope.errmessage = "";
                          $scope.mobile = "";
                          $scope.password = "";
+                         console.log(temp[0].FirstName + temp[0].LastName);
+                         $rootScope.profileName = temp[0].FirstName + temp[0].LastName;
                          document.getElementById("menu-list-item2").style.display = "none";
                          document.getElementById("menu-list-item9").style.display = "block";
                          loginService.setObject(temp);
+
                          $state.go('tabsController.dJMJewels');
                      } else {
                          $scope.errmessage = "Invalid credentials";

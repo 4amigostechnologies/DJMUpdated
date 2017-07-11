@@ -59,7 +59,7 @@
       <script src="js/UserSchemeDetailsCtrl.js"></script>
       <script src="js/contactUsCtrl.js"></script>
       <script src="js/historyCtrl.js"></script>
-      <script src="js/menuCtrl.js"></script>
+      
       <script src="js/loginCtrl.js"></script>
       <script src="js/welcomeCtrl.js"></script>
       <script src="js/fAQCtrl.js"></script>
@@ -69,7 +69,7 @@
       <script src="js/profileCtrl.js"></script>
       <script src="js/registerCtrl.js"></script>
     <script src="js/routes.js"></script>
-    
+      <script src="js/menuCtrl.js"></script>
      
     <script src="js/directives.js"></script>
      
@@ -96,7 +96,7 @@
     <ion-side-menu side="left" id="side-menu21">
       <ion-content ng-controller="menuCtrl" padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
         <div class="spacer" data-componentid="spacer13" style="height: 10px;"></div>
-        <h4 id="menu-heading10" style="color:black;text-align:center;" data-componentid="heading10">Pavan Kumar</h4>
+        <h4 id="menu-heading10" style="color:black;text-align:center;" data-componentid="heading10">{{profileName}}</h4>
         <div class="spacer" data-componentid="spacer14" style="height: 10px;"></div>
         <ion-list id="menu-list1" data-componentid="list1">
           <ion-item class="item-icon-left assertive" id="menu-list-item2" ui-sref="register" menu-close="" data-componentid="list-item2">
