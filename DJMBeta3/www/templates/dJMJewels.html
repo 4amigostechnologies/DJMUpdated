@@ -21,10 +21,11 @@
           </ion-list>
 
 
-    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="dJMJewels-slider3" style="width:100%;height:200px;">
+    <!--<ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="dJMJewels-slider3" style="width:100%;height:200px;">
       <ion-slide-page id="dJMJewels-slide25" style="background:url(&quot;img/slide.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
       <ion-slide-page id="dJMJewels-slide26" style="background:url(&quot;img/slide2.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
     </ion-slides>
+        -->
       <div class="list-mo">
           <div id="dJMJewels-container3" class="thumb-contain">
             <ion-list id="cardDetails-list10">
@@ -33,11 +34,14 @@
                           id="cardDetails-list-item30"
                           ui-sref="tabsController.userSchemeSubscriptionDetails({ subscriptionId: userScheme.SubscriptionId, UserId: {{UserID}} })">
 
-                    <img src="img/Lbw7eXLQiSluh1cN0zz8_static_qr_code_without_logo.jpg">
+                    <!--<img src="img/Lbw7eXLQiSluh1cN0zz8_static_qr_code_without_logo.jpg">-->
+                    <img src={{qr_img_scheme_url_head}}+{{userScheme.SchemeMemberCode}}+{{qr_img_scheme_url_tail}} alt='qr code'>
                     <h2energized>
                         {{userScheme.SchemeName}}
                        
                         <p>{{userScheme.SchemeMemberCode}} </p>
+                        <p> Batch Number : {{userScheme.SchemeMemberCode | limitTo : 5 :3}} </p>
+                        <p> Card Number : {{userScheme.SchemeMemberCode | limitTo : 5 :8}} </p>
                         <i class="icon ion-android-options"></i>
                     </h2energized>
                 </ion-item>
@@ -52,13 +56,6 @@
         </div>
           
       </div>
-    <div class="spacer" style="width: 320px; height: 20px;"></div>
-    <p>
-      <font>
-        <b>
-          <marquee>Today's Gold Rate: 2750/- per gram</marquee>
-        </b>
-      </font>
-    </p>
+    <div class="spacer" style="width: 100%; height: 20px;"></div>
   </ion-content>
 </ion-view>

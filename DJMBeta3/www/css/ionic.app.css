@@ -5697,7 +5697,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
  * --------------------------------------------------
  */
 .item {
-  border-color: #ddd;
+  /*border-color: #ddd;*/
   background-color: #fff;
   color: #444;
   position: relative;
@@ -6617,7 +6617,7 @@ button.item.item-button-right {
   margin-bottom: 20px; }
 
 .list:last-child {
-  margin-bottom: 0px; }
+  /*margin-bottom: px;*/ }
   .list:last-child.card {
     margin-bottom: 40px; }
 

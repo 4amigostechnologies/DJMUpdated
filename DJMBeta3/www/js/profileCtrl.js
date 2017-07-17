@@ -9,5 +9,6 @@ function ($scope,$rootScope, $stateParams, loginService) {
     $scope.email = user.EmailId;
     $scope.phoneNo = user.PhoneNo;
     $scope.UserID = user.id;
+    $scope.qr_url = "https://chart.googleapis.com/chart?cht=qr&chl="+user.PhoneNo+"&chs=180x180&choe=UTF-8&chld=L|2";
 
 }]);

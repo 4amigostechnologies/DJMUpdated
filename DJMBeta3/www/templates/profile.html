@@ -1,9 +1,10 @@
 ﻿<ion-view title="Profile" id="page18">
     <ion-content padding="true" class="has-header">
         <ion-list id="profile-list5">
-            <ion-item class="item-thumbnail-left calm" id="profile-list-item11">
-                <img style="max-width:50%" src="img/profile_male.jpg">
-                <h2calm style="max-width:50%;position: absolute; right: 10%;">
+            <ion-item class="item-thumbnail-left calm" style="border-color:red" id="profile-list-item11">
+                <img style="max-width:20%" src="img/profile_male.jpg">
+                <!--<img style="max-width:20%" src={{qr_url}} alt='qr code'>-->
+                <h2calm style="position: absolute; left: 25%;color: red;font-weight: bold; font-size: larger;">
                     {{profileName}}
                     <p>{{phoneNo}}</p>
                 </h2calm>
@@ -12,6 +13,7 @@
         <div id="profile-button-bar9" class="button-bar">
             <button id="profile-button60" class="button button-assertive button-small">Edit Profile</button>
         </div>
+        <center><img src={{qr_url}} alt='qr code'></center>
         <div class="list card" id="profile-card25">
             <ion-item class="item-icon-right" id="profile-list-item22">
                 My Cards
