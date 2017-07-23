@@ -32,6 +32,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <PublishDatabases>false</PublishDatabases>
+    <IncludeIisSettings>true</IncludeIisSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -164,7 +166,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\PaymentHistory.cs" />
+    <Compile Include="Models\CardNumbers.cs" />
     <Compile Include="Models\Scheme.cs" />
     <Compile Include="Models\SchemeDetail.cs" />
     <Compile Include="Models\SchemeParameters.cs" />
@@ -187,6 +189,7 @@
     <Compile Include="Models\BookDetailDTO.cs" />
     <Compile Include="Models\BookDTO.cs" />
     <Compile Include="DBContext\DJMServiceContext.cs" />
+    <Compile Include="Models\PaymentHistory.cs" />
     <Compile Include="Models\UserSchemeInfo.cs" />
     <Compile Include="Models\UserSchemeSubscriptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -222,6 +225,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\djmwebapi.pubxml" />
+    <None Include="Properties\PublishProfiles\WebAPI.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

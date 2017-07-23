@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAERawPmDwK0Gg/+DH1+aaQQAAAAACAAAAAAAQZgAAAAEAACAAAABrOkQeQimtMcRH2ZNUnWAaQ8jUyRjLgCX96+NW0Ro8FwAAAAAOgAAAAAIAACAAAADQk8tqk+WjppoLdg3me3zMKMcFyClMK7+hfdViuHay8yAAAAC41rfKM09GfYtgQrT/UrmL50DRAeHQxWLzaIhYM+U+CEAAAACO2eaNuETsOJ8WG6BlvzNanpQ4kS2M7RAhdnX3pCoY28k7D4GBT61SkQszFegT4CqEz8Qu6HFU50Vct5188yQ9</EncryptedPassword>
+    <_PublishTargetUrl>C:\Users\Shiva\documents\visual studio 2015\Projects\DJMBeta3\BookService\DJMWebAPI.djmjewels.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/4Amigos.Data.WebAPI.dll">
+      <publishTime>06/10/2017 15:20:41</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="bin/Swashbuckle.Core.dll">
+      <publishTime>11/01/2016 22:04:36</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>01/28/2015 04:01:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>01/28/2015 04:03:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>02/08/2013 16:42:28</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/24/2017 15:17:45</publishTime>
+    </File>
+    <File Include="img/7Ajy4zbGToeU934QM3X0_web_hi_res_512.png">
+      <publishTime>05/28/2017 16:58:45</publishTime>
+    </File>
+    <File Include="img/8w4phWuuTKdIbJqFLEiQ_djm_logo.png">
+      <publishTime>05/28/2017 16:58:45</publishTime>
+    </File>
+    <File Include="img/bb_button.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/fUUp24kBTniFC5YSmuVD_djm_logo.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/gp_button.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/ionic.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/kd_button.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/L7WGo51iT2mTinY1jcMf_web_hi_res_512.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/ll_button.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/mipmap-hdpi.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/mipmap-mdpi.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/mipmap-xhdpi.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/mipmap-xxhdpi.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/mipmap-xxxhdpi.png">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/slide.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/slide2.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/UnOgQi7bShyIC9UJWAub_11390074_852598771500103_5398503957573333216_n.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="img/Z6LfHHm0QaKVxN57NuAb_DSC01937.jpg">
+      <publishTime>05/28/2017 16:58:48</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/24/2017 15:37:55</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/10/2017 15:27:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="DJMWebAPI.djmjewels.com" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Shiva\\documents\\visual\ studio\ 2015\\Projects\\DJMBeta3\\BookService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Shiva\\documents\\visual\ studio\ 2015\\Projects\\DJMBeta3\\BookService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DJMServiceContext-Web.config Connection String" description="" value="Data Source=localhost;Initial Catalog=DJMJewels;User id=sa;Password=Kermit99;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Shiva\\documents\\visual\ studio\ 2015\\Projects\\DJMBeta3\\BookService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DJMServiceContext']/@connectionString" />
+  </parameter>
+</parameters>

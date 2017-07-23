@@ -13,15 +13,48 @@ namespace Amigos.Data.WebAPI.Models
         public Guid SchemeId { get; set; }
 
         [Required]
-        public string ParameterName { get; set; }
-
-        public string Value { get; set; }
+        public string BatchCode { get; set; }
 
         [Required]
-        public bool status { get; set; }
+        public int Term { get; set; }
+
+        [Required]
+        public string SchemeCode { get; set; }
+
+        [Required]
+        public string Description { get; set; }
+
+        [Required]
+        public string Name { get; set;}
+
+        [Required]
+        public int MaxCards { get; set; }
+
+        [Required]
+        public decimal InstallmentAmount { get; set; }
+
+        [Required]
+        public Boolean Status { get; set; }
+
+        public string icon { get; set; }
 
 
+    }
 
+    public class SchemeData
+    {
+        [Required]
+        public Guid Id { get; set; }
 
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        public string SchemeCode { get; set; }
+
+        [Required]
+        public int Term { get; set; }
+
+        public string icon { get; set; }
     }
 }

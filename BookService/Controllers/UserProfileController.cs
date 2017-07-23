@@ -8,6 +8,7 @@ using DJMServices.Models;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 
 namespace Amigos.Data.WebAPI.Controllers
 {
@@ -39,6 +40,37 @@ namespace Amigos.Data.WebAPI.Controllers
             var user = db.UserProfiles.Where(x => x.id == id);
             return user;
         }
+
+        [HttpGet]
+        [Route("UserProfiles/{PhoneNumber}")]
+        public IList<UserProfile> GetUserDetails(string PhoneNumber)
+        {
+            List<UserProfile> test = db.Database.SqlQuery<UserProfile>(" exec dbo.[USP_GetUserDetails] @PhoneNumber", new SqlParameter("@UserID", PhoneNumber)).ToList();
+
+            return test;
+        }
+
+        //[HttpPost]
+        //[Route("UserProfiles")]
+        //public IList<UserProfile> CreateNewUser(string FirstName, string LastName, string Gender, string EmailID, string PhoneNo, string Password, string Address, 
+        //    string City, string PostalCode, DateTime DOB, string MaritalStatus, string ProfileImageURL)
+        //{
+        //    List<UserProfile> test = db.Database.SqlQuery<UserProfile>(" exec dbo.[USP_UserRegistration] @FirstName, @LastName, @Gender, @EmailID, @PhoneNo, @Password, @Address, @City, @PostalCode, @DOB, @MaritalStatus, @ProfileImageURL", 
+        //        new SqlParameter("@FirstName", FirstName),
+        //        new SqlParameter("@LastName", LastName),
+        //        new SqlParameter("@Gender", Gender),
+        //        new SqlParameter("@EmailID", EmailID),
+        //        new SqlParameter("@PhoneNo", PhoneNo),
+        //        new SqlParameter("@Password", Password),
+        //        new SqlParameter("@Address", Address),
+        //        new SqlParameter("@City", City),
+        //        new SqlParameter("@PostalCode", PostalCode),
+        //        new SqlParameter("@DOB", DOB),
+        //        new SqlParameter("@MaritalStatus", MaritalStatus),
+        //        new SqlParameter("@ProfileImageURL", ProfileImageURL)).ToList();
+
+        //    return test;
+        //}
 
         ///UserProfiles/id
         [HttpPut]

@@ -7,34 +7,19 @@ namespace Amigos.Data.WebAPI.Models
 {
     public class UserSchemeSubscriptionInfo
     {
-        public Guid SubscriptionId { get; set; }
+        public int CardNumber { get; set; }
 
-        public string SchemeMemberCode { get; set; }
+        public string CardName { get; set; }
 
-        public Guid SchemeId { get; set; }
+        public string CardCode { get; set; }
 
-        public int BatchId { get; set; }
+        public decimal LastPaidAmount { get; set; }
 
-        public string CardNo { get; set; }
+        public DateTime LastPaidDate { get; set; }
 
-        public string SchemeName { get; set; }
+        public string BatchCode { get; set; }
 
-        public decimal DueAmount { get; set; }
-
-        public DateTime DueDate { get; set; }
-
-        public string CardLuckyName { get; set; }
-
-        public int MonthsCompleted { get; set; }
-
-        public int MonthsPending { get; set; }
-
-        public int TotalMonths { get; set; }
-
-        public DateTime EndDate { get; set; }
-
-
-
+        public decimal MonthlyInstallment { get; set; }
 
     }
 }
