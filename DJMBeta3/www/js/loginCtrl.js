@@ -2,13 +2,13 @@ angular.module('login', ['ngResource'])
    .controller('loginCtrl', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
       // You can include any angular dependencies as parameters for this function
       // TIP: Access Route Parameters for your page via $stateParams.parameterName
-      function ($scope,$rootScope, $http, $window, $state, $stateParams, $location, loginService) {
+      function ($scope, $rootScope, $http, $window, $state, $stateParams, $location, loginService) {
           var app = angular.module('myapp', []);
           //app.controller('myCtrl', function ($scope, $http, $window) {
           console.log("hi");
-
+          //var api_url = BlankFactory.getAPIUrl();
           $scope.ButtonClick = function () {
-              $http.get("http://djmwebapi.djmjewels.com/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
+              $http.get("http://localhost/DJMServices/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
                  function (respons) {
                      var temp = respons.data;
                      console.log(temp);

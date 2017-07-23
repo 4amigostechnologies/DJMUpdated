@@ -27,12 +27,12 @@ angular.module('app.routes', [])
         templateUrl: 'templates/schemeDetails.html',
         controller: 'schemesCtrl',
          resolve: {
-                  schemeDetails1:  function ($resource, $stateParams) {
-                      var post = $resource('http://djmwebapi.djmjewels.com/schemes/:schemeId', { schemeId: '@schemeId' });
-                      return post.get({'schemeId':$stateParams.schemeId}).$promise; 
-                    },
+                  //schemeDetails1:  function ($resource, $stateParams) {
+                  //    var post = $resource('http://localhost/DJMServices/schemes/:schemeId', { schemeId: '@schemeId' });
+                  //    return post.query({'schemeId':$stateParams.schemeId}).$promise; 
+                  //  },
                   schemeParameter1: function ($resource, $stateParams) {
-                      var post = $resource('http://djmwebapi.djmjewels.com/schemes/:schemeId/Parameters', { schemeId: '@schemeId' });
+                      var post = $resource('http://localhost/DJMServices/schemes/Parameters/:schemeId', { schemeId: '@schemeId' });
                       return post.query({ 'schemeId': $stateParams.schemeId }).$promise;
                   }
 
@@ -41,15 +41,15 @@ angular.module('app.routes', [])
     }
   })
 .state('tabsController.userSchemeSubscriptionDetails', {
-    url: '/userSchemeSubscriptionDetails/:subscriptionId/:UserId',
+    url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode',
     views: {
         'tab2': {
             templateUrl: 'templates/cardDetails.html',
             controller: 'UserSchemeDetailsCtrl',
             resolve: {
                 userSchemesSubscriptionInfo1: function ($resource, $stateParams) {
-                    var post = $resource('http://djmwebapi.djmjewels.com/schemeSubscriptions/:subscriptionId/:UserId', { subscriptionId: '@subscriptionId', UserId: '@UserId' });
-                    return post.query({ 'subscriptionId': $stateParams.subscriptionId, 'UserId': $stateParams.UserId }).$promise;
+                    var post = $resource('http://localhost/DJMServices/schemeSubscriptions/:UserId/:SchemeId/:CardCode', { UserId: '@UserId', SchemeId: '@SchemeID', CardCode: '@CardCode' });
+                    return post.query({ 'UserId': $stateParams.UserId, 'SchemeId': $stateParams.SchemeId, 'CardCode': $stateParams.CardCode }).$promise;
                 }
             }
         }
@@ -64,7 +64,7 @@ angular.module('app.routes', [])
           controller: 'historyCtrl',
           resolve: {
               userHistoryInformation: function ($resource, $stateParams) {
-                  var post = $resource('http://djmwebapi.djmjewels.com/PaymentHistory/:UserId', { UserId: '@UserId' });
+                  var post = $resource('http://localhost/DJMServices/PaymentHistory/:UserId', { UserId: '@UserId' });
                   return post.query({'UserId': $stateParams.UserId }).$promise;
               }
           }
@@ -84,6 +84,16 @@ angular.module('app.routes', [])
       }
     }
   })
+
+      .state('tabsController.joinScheme', {
+          url: '/joinScheme',
+          views: {
+              'tab3': {
+                  templateUrl: 'templates/joinScheme.html',
+                  controller: 'schemejoinCtrl'
+              }
+          }
+      })
 
   .state('tabsController.profile', {
     url: '/profile',
@@ -123,6 +133,7 @@ angular.module('app.routes', [])
     templateUrl: 'templates/fAQ.html',
     controller: 'fAQCtrl'
   })
+  
 
   .state('tabsController.notifications', {
     url: '/notifications',

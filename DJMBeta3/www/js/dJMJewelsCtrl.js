@@ -4,17 +4,17 @@ angular.module('dJMJewels', ['ngResource'])
 function ($scope, $resource, $stateParams, $http, loginService) {
 
     //$scope.userSchemesSubscriptions = userSchemesSubscriptions1;
+    var user = loginService.getObject();
+    $scope.UserID = user.id;
 
-
-    var post1 = $resource('http://djmwebapi.djmjewels.com/SchemeSubscriptions', { 'isarray': true });
+    var post1 = $resource('http://localhost/DJMServices/SchemeSubscriptions/'+user.id, { 'isarray': true });
     post1.query().$promise.then(function (data) {
         $scope.userSchemesSubscriptions = data;
         console.log(data);
     });
 
-    var user = loginService.getObject();
-    $scope.UserID = user.id;
-    var post = $resource('http://djmwebapi.djmjewels.com/schemes', { 'isarray': true });
+    
+    var post = $resource('http://localhost/DJMServices/schemesdata', { 'isarray': true });
 
     post.query().$promise.then(function (data) {
         // success
@@ -26,7 +26,7 @@ function ($scope, $resource, $stateParams, $http, loginService) {
     $scope.groups = [];
     //var date = new Date();
     $scope.days = [];
-
+    $scope.recent_gold_rate;
 
     for (var i = 0; i < 1; i++) {
         $scope.groups[i] = {
@@ -35,7 +35,7 @@ function ($scope, $resource, $stateParams, $http, loginService) {
         };
         for (var j = 0; j < 1; j++) {
 
-            $http.get("http://djmwebapi.djmjewels.com/jewelrates/sort").then(function (response) {
+            $http.get("http://localhost/DJMServices/jewelrates/sort").then(function (response) {
 
                 console.log(response.data[0].Amount);
                 for (var i = 0; i < 5; i++) {
@@ -45,9 +45,10 @@ function ($scope, $resource, $stateParams, $http, loginService) {
                     amount = response.data[i].Amount;
                     date = response.data[i].CreatedDate;
                     var temp = new Date(date);
-                    item = "Rs." + amount.toString() + "  on date:  " + temp.toDateString();
+                    item =  amount.toString() + "  on date:  " + temp.toDateString();
                     $scope.days.push(item);
                 }
+                $scope.recent_gold_rate =response.data[0].Amount;
                 console.log("success");
             });
 

@@ -121,7 +121,7 @@ function ($scope, $http, $window, $stateParams) {
         };
         for (var j = 0; j < 1; j++) {
             
-            $http.get("http://192.168.1.7/DJMServices/jewelrates/sort").then(function (response) {
+            $http.get("http://localhost/DJMServices/jewelrates/sort").then(function (response) {
 
                 console.log(response.data[0].Amount);
                 for (var i = 0; i < 5; i++) {

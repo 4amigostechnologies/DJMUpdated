@@ -104,3 +104,21 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
 .faq-bb{
     background-color:#ffffff;
 }
+
+.list .item.item-accordion {
+  font-size:small;
+  line-height: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion:nth-child(odd) {
+   background-color: #efc2d2;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}

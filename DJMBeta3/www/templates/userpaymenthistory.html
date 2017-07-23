@@ -1,17 +1,14 @@
-<ion-view title="History Details" id="page17">
+<ion-view title="Payment History" id="page17">
     
   <ion-content padding="true" class="has-header">
-      <ion-header-bar class="bar-positive">
-          <h1 class="title">Payment History</h1>
-      </ion-header-bar>
-    <div class="list card" id="cardDetails-card23"> 
+    <div class="list" id="cardDetails-card23"> 
              
        <ion-list>
-                <div ng-repeat="payment in userHistoryInformation">
+                <div ng-repeat="payment in userHistoryInformation1">
                     <ion-item class="item-stable" ng-click="toggleGroup(payment)" ng-class="{active: isGroupShown(payment)}">
-                        <i class="icon" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i>
-                        &nbsp;
-                        Payment ID {{payment.PaymentId}}
+                        
+                       
+                        <b>{{Getdate}} &nbsp; Payment ID {{payment.PaymentId}}  &nbsp; <i class="icon" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i></b>
                     </ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">PaymentID : {{payment.PaymentId}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Scheme Name : {{payment.Name}}</ion-item>

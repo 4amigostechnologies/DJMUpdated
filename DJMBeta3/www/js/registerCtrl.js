@@ -67,7 +67,7 @@ function ($scope, $http, $stateParams) {
         var obj = angular.toJson($scope.user);
         console.log(obj);
 
-        $http.post('http://djmwebapi.djmjewels.com/UserProfiles', obj, config)
+        $http.post('http://localhost/DJMServices/UserProfiles', obj, config)
         .success(function (data, status, headers, config) {
             $scope.errMessage = "register success";
             console.log(data);

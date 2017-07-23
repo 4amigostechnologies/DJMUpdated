@@ -1,30 +1,43 @@
+<ion-view title="Login" hide-nav-bar="true" id="page6">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div ng-app="myapp" ng-controller="loginCtrl">
+            <form id="login-form1" class="list">
+                <div class="bar bar-header bar-assertive">
+                    <h1 class="title">Please Login Here</h1>
+                </div>
+                <div class="spacer" style="width: 300px; height: 40px;"></div>
+            <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="dJMJewels-slider3" style="width:100%;height:200px;">
+                <ion-slide-page id="dJMJewels-slide25" style="background:url(&quot;img/slide.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="dJMJewels-slide26" style="background:url(&quot;img/slide2.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+            </ion-slides>
+        
 
-<ion-view title="Login" id="page6" hide-nav-bar="true" style="background-color:#DA191C;">
-    <ion-content padding="true" class="has-header">
-        <div>
-            <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+                <!--<div>
+                    <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+                </div>-->
+
+                <div class="spacer" style="width: 300px; height: 12px;"></div>
+                <hr/>
+                <ion-list id="login-list2">
+                    <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input1" name="username">
+                        <span class="input-label">User Name</span>
+                        <input type="text" ng-model="mobile" placeholder="Enter Mobile Number">
+                    </label>
+                    <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input2" name="password">
+                        <span class="input-label">Password</span>
+                        <input type="password" ng-model="password" placeholder="Enter Password">
+                    </label>
+                </ion-list>
+                <hr/>
+                <!--<div class="spacer" style="height: 40px;"></div>-->
+                <a id="login-button1" class="button button-assertive button-block button-small" ng-click="ButtonClick()">LOG IN</a>
+                <a ui-sref="register" id="login-button49" class="button button-assertive button-block button-small">NEW USER REGISTRATION</a>
+                {{errmessage}}
+            </form>
+            <div id="login-button-bar1" class="button-bar"></div>
         </div>
-           <div ng-app="myapp" ng-controller="loginCtrl">
-                <form id="login-form1" class="list">
-                    <!--<div class="spacer" style="height: 50px;"></div>-->
-                    <ion-list id="login-list2">
-                        <label class="item item-input item-stacked-label login-boldtext" id="login-input1" name="username">
-                            <span class="input-label" style="color:white;border:none">User Name</span>
-                            <input type="text" ng-model="mobile" placeholder="Enter Mobile Number">
-                        </label>
-                        <label class="item item-input item-stacked-label login-boldtext" id="login-input2" name="password">
-                            <span class="input-label" style="color:white;border:none">Password</span>
-                            <input type="password" ng-model="password" placeholder="Enter Password">
-                        </label>
-                    </ion-list>
-                    <div class="spacer" style="height: 40px;"></div>
-                    <div>
-                        <button id="login-button10" class="button button-assertive  button-block" ng-click="ButtonClick()">LOGIN</button>
-
-                    </div>
-                    {{errmessage}}
-                </form>
-                <div id="login-button-bar1" class="button-bar"></div>
-            </div>
+        <p>
+            <font><b><marquee>Please contact Administrator for Login issues.</marquee></b></font>
+        </p>
 </ion-content>
 </ion-view>

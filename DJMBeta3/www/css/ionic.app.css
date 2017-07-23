@@ -5697,16 +5697,16 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
  * --------------------------------------------------
  */
 .item {
-  /*border-color: #ddd;*/
+  border-color: white;
   background-color: #fff;
   color: #444;
   position: relative;
   z-index: 2;
   display: block;
   margin: -1px;
-  padding: 16px;
+  padding: 8px;
   border-width: 1px;
-  border-style: solid;
+  border-style: none;
   font-size: 16px; }
   .item h2 {
     margin: 0 0 2px 0;
@@ -6131,7 +6131,7 @@ a.item-content {
   background-color: #444;
   color: #fff; }
   .item-complex.item-dark > .item-content.active, .item-complex.item-dark > .item-content:active {
-    border-color: #000;
+   /* border-color: #000;*/
     background-color: #262626; }
     .item-complex.item-dark > .item-content.active.item-complex > .item-content, .item-complex.item-dark > .item-content:active.item-complex > .item-content {
       border-color: #000;
@@ -6651,7 +6651,7 @@ button.item.item-button-right {
 .card {
   padding-top: 1px;
   padding-bottom: 1px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0); }
   .card .item {
     border-left: 0;
     border-right: 0; }
@@ -9446,7 +9446,7 @@ a.button {
  * --------------------------------------------------
  */
 .padding {
-  padding: 10px; }
+  padding: 0px; }
 
 .padding-top,
 .padding-vertical {

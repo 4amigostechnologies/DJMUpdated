@@ -1,36 +1,40 @@
 ﻿<ion-view title="Profile" id="page18">
     <ion-content padding="true" class="has-header">
-        <ion-list id="profile-list5">
+        <center><img src={{qr_url}} alt='qr code'></center>
+        <!--<ion-list id="profile-list5">
             <ion-item class="item-thumbnail-left calm" style="border-color:red" id="profile-list-item11">
                 <img style="max-width:20%" src="img/profile_male.jpg">
-                <!--<img style="max-width:20%" src={{qr_url}} alt='qr code'>-->
+                <img style="max-width:20%" src={{qr_url}} alt='qr code'>
                 <h2calm style="position: absolute; left: 25%;color: red;font-weight: bold; font-size: larger;">
                     {{profileName}}
                     <p>{{phoneNo}}</p>
                 </h2calm>
             </ion-item>
-        </ion-list>
-        <div id="profile-button-bar9" class="button-bar">
-            <button id="profile-button60" class="button button-assertive button-small">Edit Profile</button>
-        </div>
-        <center><img src={{qr_url}} alt='qr code'></center>
-        <div class="list card" id="profile-card25">
-            <ion-item class="item-icon-right" id="profile-list-item22">
+        </ion-list>-->
+        <p style="color: red;font-weight: bold; font-size: larger;text-align:center">{{profileName}}</p>
+        <p style="text-align:center">{{phoneNo}}</p>
+        
+        <hr/>
+  <!----<div class="list card" id="profile-card25">-->
+            <ion-item class="item-icon-right" id="profile-list-item22" style="border:none;padding-bottom:5px;padding-top:10px">
                 My Cards
                 <i class="icon ion-card"></i>
             </ion-item>
-            <ion-item class="item-icon-right" id="profile-list-item26" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">
+            <ion-item class="item-icon-right" id="profile-list-item26" style="border:none;padding-bottom: 0;padding-top:0" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">
                 My Payments
                 <i class="icon ion-cash"></i>
             </ion-item>
-            <ion-item class="item-icon-right" id="profile-list-item32" ui-sref="tabsController.dJMJewels">
+            <ion-item class="item-icon-right" id="profile-list-item32" style="border:none;padding-bottom: 0;padding-top:0" ui-sref="tabsController.dJMJewels">
                 Join New Scheme
                 <i class="icon ion-android-checkbox-outline"></i>
             </ion-item>
-            <ion-item class="item-icon-right" id="profile-list-item33">
+            <ion-item class="item-icon-right" id="profile-list-item33" style="border:none;padding-bottom:10px;padding-top:10px">
                 Invite
                 <i class="icon ion-android-contacts"></i>
             </ion-item>
+        <hr/>
+        <div id="profile-button-bar9" class="button-bar">
+            <button id="profile-button60" class="button button-assertive button-small">Edit Profile</button>
         </div>
     </ion-content>
 </ion-view>
