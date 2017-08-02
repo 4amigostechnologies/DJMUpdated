@@ -17,4 +17,17 @@ angular.module('app.services', [])
         console.log(object);
         return object;
     }
+})
+
+.service('JoinService', function ($http) {
+    //this.getCardNumbers = function () {
+    //    $http.get("http://localhost/DJMServices/SchemeSubscriptions/CardNumbers").then(function (response) {
+    //        console.log(response.data[0]);
+    //        return response.data;
+    //    }, function (response) {
+    //        return response.statusText;
+    //    });
+    //}
+
+
 });

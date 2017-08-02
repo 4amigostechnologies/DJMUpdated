@@ -43,7 +43,7 @@ angular.module('app.routes', [])
 .state('tabsController.userSchemeSubscriptionDetails', {
     url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode',
     views: {
-        'tab2': {
+        'tab3': {
             templateUrl: 'templates/cardDetails.html',
             controller: 'UserSchemeDetailsCtrl',
             resolve: {
@@ -86,7 +86,7 @@ angular.module('app.routes', [])
   })
 
       .state('tabsController.joinScheme', {
-          url: '/joinScheme',
+          url: '/joinScheme/:schemename/:batchCode:/:schemeId',
           views: {
               'tab3': {
                   templateUrl: 'templates/joinScheme.html',

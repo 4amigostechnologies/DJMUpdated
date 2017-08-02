@@ -19,5 +19,5 @@ function ($scope,$http, $stateParams, $state, userHistoryInformation) {
         return $scope.shownGroup === group;
     };
 
-     console.log($scope.userHistoryInformation1);
+     console.log($scope.userHistoryInformation);
 }]);

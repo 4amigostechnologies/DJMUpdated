@@ -8,11 +8,11 @@
               <hr />
               <ion-item id="cardDetails-list-item39"><b>Card Number:</b> {{schemeinfo.CardNumber}}</ion-item>
               <ion-item id="cardDetails-list-item39"><b>Card Name:</b> {{schemeinfo.CardName}}</ion-item>
-              <ion-item id="cardDetails-list-item39"><b>Scheme Name:</b></ion-item>
+              <ion-item id="cardDetails-list-item39"><b>Scheme Name: </b>{{schemeinfo.Name}}</ion-item>
               <ion-item id="cardDetails-list-item39"><b>Batch Code: </b> {{schemeinfo.BatchCode}}</ion-item>
               <ion-item id="cardDetails-list-item40"><b>Monthly Installment:</b> {{schemeinfo.MonthlyInstallment}} </ion-item>
               <ion-item id="cardDetails-list-item41"><b>Last Paid Amount:</b> {{schemeinfo.LastPaidAmount}} </ion-item>
-              <ion-item id="cardDetails-list-item42"><b>Last Paid Date:</b> {{schemeinfo.LastPaidDate || Date}} </ion-item>
+              <ion-item id="cardDetails-list-item42"><b>Last Paid Date:</b> {{schemeinfo.LastPaidDate | date}} </ion-item>
               <hr />
           </div>
       </ion-list>

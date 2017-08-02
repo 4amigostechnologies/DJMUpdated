@@ -3,29 +3,24 @@
     <form id="joinScheme-form5" class="list">
       <label class="item item-input" id="joinScheme-input12">
         <span class="input-label">Name</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" value="{{profileName}}">
       </label>
       <label class="item item-input" id="joinScheme-input15">
-        <span class="input-label">Scheme</span>
-        <input type="text" placeholder="">
+        <span class="input-label">Scheme Name:{{schemeName}}</span>
+        
       </label>
       <label class="item item-select" id="joinScheme-select3" name="cardnumber">
         <span class="input-label">Select Card No</span>
-        <select>
-          <option>110</option>
-          <option>120</option>
-          <option>135</option>
-          <option>146</option>
-          <option>153</option>
-        </select>
+          <select ng-options="card.Id as card.CardNo for card in cardNumbers track by card.Id" ng-model="cardNumber"></select>
       </label>
+        {{cardNumber}}
       <label class="item item-input" id="joinScheme-input18">
         <span class="input-label">Card Name</span>
-        <input type="text" placeholder="">
+        <input type="text" ng-model="cardName" placeholder="">
       </label>
       <label class="item item-input" id="joinScheme-input16">
         <span class="input-label">Amount</span>
-        <input type="number" placeholder="">
+        <input type="number" placeholder="" ng-model="DefinedAmount">
       </label>
       <label class="item item-select" id="joinScheme-select2" name="paymenttype">
         <span class="input-label">Payment Type</span>
@@ -35,6 +30,7 @@
         </select>
       </label>
     </form>
-    <button id="joinScheme-button61" class="button button-assertive button-small button-block">Join</button>
+    <button id="joinScheme-button61" class="button button-assertive button-small button-block" ng-click="joinScheme()" >Join</button>
+      <div ng-bind="errMessage"></div>
   </ion-content>
 </ion-view>

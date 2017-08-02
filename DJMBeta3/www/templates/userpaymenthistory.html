@@ -4,11 +4,11 @@
     <div class="list" id="cardDetails-card23"> 
              
        <ion-list>
-                <div ng-repeat="payment in userHistoryInformation1">
+                <div ng-repeat="payment in userHistoryInformation">
                     <ion-item class="item-stable" ng-click="toggleGroup(payment)" ng-class="{active: isGroupShown(payment)}">
                         
                        
-                        <b>{{Getdate}} &nbsp; Payment ID {{payment.PaymentId}}  &nbsp; <i class="icon" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i></b>
+                        <b>{{payment.PaymentDate}} &nbsp; <br />Transaction Number {{payment.TransactionNumber}}  &nbsp; <i class="icon" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i></b>
                     </ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">PaymentID : {{payment.PaymentId}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Scheme Name : {{payment.Name}}</ion-item>
