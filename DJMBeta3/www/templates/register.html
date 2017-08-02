@@ -6,12 +6,12 @@
           <span class="input-label">First Name</span>
           <input type="text" name="name" ng-model="user.FirstName" placeholder="Enter your first name" required>
         </label>
-          <p ng-show="registerForm.name.$invalid && !registerForm.name.$pristine" class="help-block">You Firstname is required.</p>
+          <p ng-show="registerForm.name.$invalid && registerForm.name.$touched" class="help-block">You Firstname is required.</p>
         <label class="item item-input" id="register-input11">
           <span class="input-label">Last Name</span>
           <input type="text" ng-model="user.LastName" name="lastname" placeholder="Enter your last name" required>
         </label>
-          <p ng-show="registerForm.lastname.$invalid && !registerForm.lastname.$pristine" class="help-block">You Lastname is required.</p>
+          <p ng-show="registerForm.lastname.$invalid && registerForm.lastname.$touched" class="help-block">You Lastname is required.</p>
         <label class="item item-select" id="register-select1">
           <span class="input-label">Gender</span>
           <select name="gender" ng-model="user.Gender" required>
@@ -20,27 +20,27 @@
             <option value="F">Female</option>
           </select>
         </label>
-          <p ng-show="registerForm.gender.$invalid && !registerForm.gender.$pristine" class="help-block">You Gender is required.</p>
+          <p ng-show="registerForm.gender.$invalid && registerForm.gender.$touched" class="help-block">You Gender is required.</p>
         <label class="item item-input" id="register-input9">
           <span class="input-label">Email</span>
           <input type="email" name="email" ng-model="user.EmailId" placeholder="Enter your email" required>
         </label>
-          <p ng-show="registerForm.email.$invalid && !registerForm.email.$pristine" class="help-block">You Mail Id is required.</p>
+          <p ng-show="registerForm.email.$invalid && registerForm.email.$touched" class="help-block">You Mail Id is required.</p>
         <label class="item item-input" id="register-input13">
           <span class="input-label">Mobile</span>
           <input type="tel" name="mobile" ng-model="user.PhoneNo" placeholder="Enter your mobile No." required>
         </label>
-          <p ng-show="registerForm.mobile.$invalid && !registerForm.mobile.$pristine" class="help-block">Your Phone Number is required.</p>
+          <p ng-show="registerForm.mobile.$invalid && registerForm.mobile.$touched" class="help-block">Your Phone Number is required.</p>
         <label class="item item-input" id="register-input10">
           <span class="input-label">Password</span>
           <input type="password" name="password" ng-model="user.Password" placeholder="enter password" required>
         </label>
-          <p ng-show="registerForm.password.$invalid && !registerForm.password.$pristine" class="help-block">Password is required.</p>
+          <p ng-show="registerForm.password.$invalid && registerForm.password.$touched" class="help-block">Password is required.</p>
         <label class="item item-input" id="register-input14">
           <span class="input-label">Confirm Password</span>
           <input type="password" name="re_password" ng-model="user.cnfPassword" placeholder="Re-enter password" required>
         </label>
-          <p ng-show="registerForm.re_password.$invalid && !registerForm.re_password.$pristine" class="help-block">Please re-enter the password.</p>
+          <p ng-show="registerForm.re_password.$invalid && registerForm.re_password.$touched" class="help-block">Please re-enter the password.</p>
           {{password_error}}
           <label class="item item-input" id="register-input15" ng-focus="validatePassword()">
               <span class="input-label">Address</span>
