@@ -11,16 +11,16 @@
       </label>
       <label class="item item-select" id="joinScheme-select3" name="cardnumber">
         <span class="input-label">Select Card No</span>
-          <select ng-options="card.Id as card.CardNo for card in cardNumbers track by card.Id" ng-model="cardNumber"></select>
+          <select ng-options="card.Id as card.CardNo for card in cardNumbers track by card.Id" ng-model="card_details.cardNumber"></select>
       </label>
-        {{cardNumber}}
+       <label>Your selected card number: {{card_details.cardNumber}}</label> 
       <label class="item item-input" id="joinScheme-input18">
         <span class="input-label">Card Name</span>
-        <input type="text" ng-model="cardName" placeholder="">
+        <input type="text" ng-model="card_details.cardName" placeholder="">
       </label>
       <label class="item item-input" id="joinScheme-input16">
         <span class="input-label">Amount</span>
-        <input type="number" placeholder="" ng-model="DefinedAmount">
+        <input type="number" placeholder="" ng-model="card_details.DefinedAmount">
       </label>
       <label class="item item-select" id="joinScheme-select2" name="paymenttype">
         <span class="input-label">Payment Type</span>
@@ -29,8 +29,9 @@
           <option>Online Payment</option>
         </select>
       </label>
+        <button id="joinScheme-button61" class="button button-assertive button-small button-block" ng-click="joinScheme()">Join</button>
     </form>
-    <button id="joinScheme-button61" class="button button-assertive button-small button-block" ng-click="joinScheme()" >Join</button>
+    
       <div ng-bind="errMessage"></div>
   </ion-content>
 </ion-view>

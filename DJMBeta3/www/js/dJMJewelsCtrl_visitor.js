@@ -13,7 +13,7 @@ function ($scope, $resource, $stateParams, $http, loginService) {
     //});
 
 
-    var post = $resource('http://localhost/DJMServices/schemes', { 'isarray': true });
+    var post = $resource('http://djmwebapi.djmjewels.com/schemes', { 'isarray': true });
 
     post.query().$promise.then(function (data) {
         // success

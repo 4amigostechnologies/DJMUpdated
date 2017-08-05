@@ -21,7 +21,7 @@ angular.module('app.services', [])
 
 .service('JoinService', function ($http) {
     //this.getCardNumbers = function () {
-    //    $http.get("http://localhost/DJMServices/SchemeSubscriptions/CardNumbers").then(function (response) {
+    //    $http.get("http://djmwebapi.djmjewels.com/SchemeSubscriptions/CardNumbers").then(function (response) {
     //        console.log(response.data[0]);
     //        return response.data;
     //    }, function (response) {

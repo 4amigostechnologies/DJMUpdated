@@ -34,6 +34,7 @@ function ($scope, $http, $stateParams) {
     };
 
     $scope.validatePassword = function () {
+        console.log("entered");
         if ($scope.user.Password !== $scope.user.cnfPassword) {
             $scope.password_error = "paswword and confirm password do not match";
         }
@@ -67,7 +68,7 @@ function ($scope, $http, $stateParams) {
         var obj = angular.toJson($scope.user);
         console.log(obj);
 
-        $http.post('http://localhost/DJMServices/UserProfiles', obj, config)
+        $http.post('http://djmwebapi.djmjewels.com/UserProfiles', obj, config)
         .success(function (data, status, headers, config) {
             $scope.errMessage = "register success";
             console.log(data);
