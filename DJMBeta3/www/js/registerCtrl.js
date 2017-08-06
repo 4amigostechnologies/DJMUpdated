@@ -1,8 +1,8 @@
 angular.module('register', ['ngResource'])
-.controller('registerCtrl', ['$scope','$http', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('registerCtrl', ['$scope', '$http', '$stateParams', '$ionicPopup', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $http, $stateParams) {
+function ($scope, $http, $stateParams, $ionicPopup) {
     
     $scope.user = {
         id: 9999,
@@ -68,13 +68,13 @@ function ($scope, $http, $stateParams) {
         var obj = angular.toJson($scope.user);
         console.log(obj);
 
-        $http.post('http://djmwebapi.djmjewels.com/UserProfiles', obj, config)
+        $http.post('http://localhost/DJMServices/UserProfiles', obj, config)
         .success(function (data, status, headers, config) {
-            $scope.errMessage = "register success";
+            showAlert("'<p>User Registrstion is Succesful. <br> Please tap OK to Login</p>'");
             console.log(data);
         })
         .error(function (data, status, header, config) {
-            $scope.errMessage = "register failed";
+            showAlert("Registration Failed");
             console.log(data);
             console.log(status);
             console.log(header);
@@ -83,7 +83,32 @@ function ($scope, $http, $stateParams) {
     
         
     }
+   var showAlert = function (message) {
 
+        var alertPopup = $ionicPopup.alert({
+            title: 'New User Registration',
+            template: message,
+            buttons: [
+             {
+                text: '<b>OK</b>',
+                type: 'button-assertive',
+                //onTap: function (e) {
+
+                //    if (!$scope.data.model) {
+                //        //don't allow the user to close unless he enters model...
+                //        e.preventDefault();
+                //    } else {
+                //        return $scope.data.model;
+                //    }
+                //}
+            }
+            ]
+        });
+
+        //alertPopup.then(function (res) {
+        //    // Custom functionality....
+        //});
+    };
 
 
 }]);

@@ -7,14 +7,14 @@ function ($scope, $resource, $stateParams, $http, loginService) {
     var user = loginService.getObject();
     $scope.UserID = user.id;
 
-    var post1 = $resource('http://djmwebapi.djmjewels.com/SchemeSubscriptions/' + user.id, { 'isarray': true });
+    var post1 = $resource('http://localhost/DJMServices/SchemeSubscriptions/' + user.id, { 'isarray': true });
     post1.query().$promise.then(function (data) {
         $scope.userSchemesSubscriptions = data;
         console.log(data);
     });
 
     
-    var post = $resource('http://djmwebapi.djmjewels.com/schemesdata', { 'isarray': true });
+    var post = $resource('http://localhost/DJMServices/schemesdata', { 'isarray': true });
 
     post.query().$promise.then(function (data) {
         // success
@@ -35,7 +35,7 @@ function ($scope, $resource, $stateParams, $http, loginService) {
         };
         for (var j = 0; j < 1; j++) {
 
-            $http.get("http://djmwebapi.djmjewels.com/jewelrates/sort").then(function (response) {
+            $http.get("http://localhost/DJMServices/jewelrates/sort").then(function (response) {
 
                 console.log(response.data[0].Amount);
                 for (var i = 0; i < 5; i++) {

@@ -1,43 +1,43 @@
-<ion-view title="Login" hide-nav-bar="true" id="page6">
-    <ion-content padding="true" class="manual-ios-statusbar-padding">
-        <div ng-app="myapp" ng-controller="loginCtrl">
-            <form id="login-form1" class="list">
-                <div class="bar bar-header bar-assertive">
-                    <h1 class="title">Please Login Here</h1>
-                </div>
-                <div class="spacer" style="width: 300px; height: 40px;"></div>
-            <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="dJMJewels-slider3" style="width:100%;height:200px;">
-                <ion-slide-page id="dJMJewels-slide25" style="background:url(&quot;img/slide.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
-                <ion-slide-page id="dJMJewels-slide26" style="background:url(&quot;img/slide2.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
-            </ion-slides>
-        
+<ion-view title="Welcome" hide-nav-bar="true" id="page7" style="background-color:#ef473a;">
 
-                <!--<div>
-                    <img src="img/fUUp24kBTniFC5YSmuVD_djm_logo.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
-                </div>-->
+  <ion-content padding="false" class="manual-remove-top-padding" scroll="false">
 
-                <div class="spacer" style="width: 300px; height: 12px;"></div>
-                <hr/>
-                <ion-list id="login-list2">
-                    <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input1" name="username">
-                        <span class="input-label">User Name</span>
-                        <input type="text" ng-model="mobile" placeholder="Enter Mobile Number">
-                    </label>
-                    <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input2" name="password">
-                        <span class="input-label">Password</span>
-                        <input type="password" ng-model="password" placeholder="Enter Password">
-                    </label>
-                </ion-list>
-                <hr/>
-                <!--<div class="spacer" style="height: 40px;"></div>-->
-                <a id="login-button1" class="button button-assertive button-block button-small" ng-click="ButtonClick()">LOG IN</a>
-                <a ui-sref="register" id="login-button49" class="button button-assertive button-block button-small">NEW USER REGISTRATION</a>
-                {{errmessage}}
-            </form>
-            <div id="login-button-bar1" class="button-bar"></div>
-        </div>
-        <p>
-            <font><b><marquee>Please contact Administrator for Login issues.</marquee></b></font>
-        </p>
-</ion-content>
+    <ion-slides disable-side-menu-drag="" options="{'loop': false}" slider="slider6" delegate-handle="slider6" id="welcome-slider6" style="width:100%;height:100%;">
+      <ion-slide-page id="welcome-slide215">
+        <div class="spacer" style="width: 320px; height: 40px;"></div>
+          <div ng-app="myapp" ng-controller="loginCtrl">
+              <div>
+                  <img src="img/djmlogo.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+              </div>
+              <h3 id="welcome-heading16" style="color:white;text-align:center;">DJM 4 Jewels</h3>
+              <div class="list card" id="welcome-card21" style="border: solid white 2px;border-radius: 10px;top:0px;bottom:0px;left:0px;right:0px;">
+                  <div class="item item-body container-color" id="welcome-list-item-container14">
+                      <form name="loginForm">
+                          <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input1" name="username">
+                              <span class="input-label">User Name</span>
+                              <input type="text" name="mobile" ng-model="mobile" placeholder="Enter Mobile Number" required>
+                          </label>
+                          <p ng-show="loginForm.mobile.$invalid && loginForm.mobile.$touched" class="help-block">Please enter mobile number.</p>
+                          <hr />
+                          <label class="item item-input item-stacked-label login-boldtext" style="border-width:0" id="login-input2" name="password">
+                              <span class="input-label">Password</span>
+                              <input type="password" name="password" ng-model="password" placeholder="Enter Password" required>
+                          </label>
+                          <p ng-show="loginForm.password.$invalid && loginForm.password.$touched" class="help-block">Please enter Password.</p>
+                          <hr />
+                          <div id="welcome-button-bar7" class="button-bar">
+                              <a id="welcome-button43" ng-disabled="loginForm.$invalid" class="button button-assertive  button-block" ng-click="ButtonClick()">LOG IN</a>
+                              <a ui-sref="register" id="welcome-button44" class="button button-assertive  button-block">Sign Up</a>
+                          </div>
+                          {{errmessage}}
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <p>
+              <font style="color:white"><marquee>Please contact Administrator for Login issues.</marquee></font>
+          </p>
+      </ion-slide-page>
+    </ion-slides>
+  </ion-content>
 </ion-view>

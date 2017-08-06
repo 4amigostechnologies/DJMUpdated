@@ -1,91 +1,100 @@
-<ion-view title="Register" id="page13" hide-nav-bar="true" ng-controller="registerCtrl">
-  <ion-content padding="true" class="has-header">
-    <form ng-submit="register()" name="registerForm" id="register-form4" class="list" novalidate>
-      <ion-list id="register-list3">
-        <label class="item item-input" id="register-input8">
-          <span class="input-label">First Name</span>
-          <input type="text" class="customstyle" name="name" ng-model="user.FirstName" placeholder="Enter your first name" required>
-        </label>
-          <p ng-show="registerForm.name.$invalid && registerForm.name.$touched" class="help-block">You Firstname is required.</p>
-        <label class="item item-input" id="register-input11">
-          <span class="input-label">Last Name</span>
-          <input type="text" class="customstyle" ng-model="user.LastName" name="lastname" placeholder="Enter your last name" required>
-        </label>
-          <p ng-show="registerForm.lastname.$invalid && registerForm.lastname.$touched" class="help-block">You Lastname is required.</p>
-        <label class="item item-select" id="register-select1">
-          <span class="input-label">Gender</span>
-          <select name="gender" ng-model="user.Gender" required>
-            <option value="">Please Select</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-          </select>
-        </label>
-          <p ng-show="registerForm.gender.$invalid && registerForm.gender.$touched" class="help-block">You Gender is required.</p>
-        <label class="item item-input" id="register-input9">
-          <span class="input-label">Email</span>
-          <input type="email" name="email" class="customstyle" ng-model="user.EmailId" placeholder="Enter your email" required>
-        </label>
-          <p ng-show="registerForm.email.$invalid && registerForm.email.$touched" class="help-block">You Mail Id is required.</p>
-        <label class="item item-input" id="register-input13">
-          <span class="input-label">Mobile</span>
-          <input type="tel" name="mobile" class="customstyle" ng-model="user.PhoneNo" placeholder="Enter your mobile No." required>
-        </label>
-          <p ng-show="registerForm.mobile.$invalid && registerForm.mobile.$touched" class="help-block">Your Phone Number is required.</p>
-        <label class="item item-input" id="register-input10">
-          <span class="input-label">Password</span>
-          <input type="password" name="password" class="customstyle" ng-model="user.Password" placeholder="enter password" required>
-        </label>
-          <p ng-show="registerForm.password.$invalid && registerForm.password.$touched" class="help-block">Password is required.</p>
-        <label class="item item-input" id="register-input14">
-          <span class="input-label">Confirm Password</span>
-          <input type="password" class="customstyle" name="re_password" ng-blur="validatePassword()" ng-model="user.cnfPassword" placeholder="Re-enter password" required>
-        </label>
-          <p ng-show="registerForm.re_password.$invalid && registerForm.re_password.$touched" class="help-block">Please re-enter the password.</p>
-          <p class="help-block">{{password_error}}</p>
-          <label class="item item-input" id="register-input15">
-              <span class="input-label">Address</span>
-              <input type="text" class="customstyle" ng-model="user.Address" placeholder="enter your address">
-          </label>
-          <label class="item item-input" id="register-input16">
-              <span class="input-label">City</span>
-              <input type="text" class="customstyle" ng-model="user.City" placeholder="enter your city">
-          </label>
-          <label class="item item-input" id="register-input17">
-              <span class="input-label">PostalCode</span>
-              <input type="number" class="customstyle" ng-model="user.PostalCode" placeholder="enter your pincode" required>
-          </label>
-          <label class="item item-input" id="register-input21">
-              <span class="input-label">DateOfBirth</span>
-              <input type="date" class="customstyle" ng-model="user.DOB" placeholder="Enter date of birth" required>
-          </label>
-          <label class="item item-select" id="register-select2">
-              <span class="input-label">Maritial Status</span>
-              <select ng-model="user.MaritalStatus" ng-change="maritialstatus()">
-                  <option ng-value="false">Single</option>
-                  <option ng-value="true">Married</option>
-                  
-              </select>
-              
-          </label>
-          <div ng-if="user.MaritalStatus=='true'">
-              <label class="item item-input" id="register-input23">
-                  <span class="input-label">SpouceName</span>
-                  <input type="text" class="customstyle" ng-model="user.SpouceName" placeholder="enter your spouce name">
-              </label>
-              <label class="item item-input" id="register-input24">
-                  <span class="input-label">Spouce DOB</span>
-                  <input type="date" class="customstyle" ng-model="user.SpouceDOB" placeholder="enter spouce DOB">
-              </label>
-              <label class="item item-input" id="register-input25">
-                  <span class="input-label">Marriage Date</span>
-                  <input type="date" class="customstyle" ng-model="user.MarriageDate" placeholder="Please enter marriage date">
-              </label>
-          </div>
-          
-     
-      </ion-list>
-        <label>{{errMessage}}</label>
-      <button type="submit" id="register-button48" ng-disabled="registerForm.$invalid" class="button button-assertive button-block">Sign up</button>
-    </form>
+<ion-view title="Register" id="page13" hide-nav-bar="true" style="background-color:#ef473a" ng-controller="registerCtrl">
+    <div class="bar bar-header bar-assertive" style="top:0px">
+        <h1 class="title">Please Register Here</h1>
+    </div>
+    
+  <ion-content padding="true">
+      <div style="border:solid white 1px;border-radius:10px;margin:5px">
+          <form ng-submit="register()" name="registerForm" id="register-form4" class="list" novalidate>
+              <div class="spacer" style="width: 300px; height: 40px;"></div>
+              <ion-list id="register-list3">
+
+                  <label class="item item-input" id="register-input8">
+                      <span class="input-label">First Name</span>
+                      <input type="text" class="customstyle" name="name" ng-model="user.FirstName" placeholder="Enter your first name" required>
+                  </label>
+                  <p ng-show="registerForm.name.$invalid && registerForm.name.$touched" class="help-block">You Firstname is required.</p>
+                  <label class="item item-input" id="register-input11">
+                      <span class="input-label">Last Name</span>
+                      <input type="text" class="customstyle" ng-model="user.LastName" name="lastname" placeholder="Enter your last name" required>
+                  </label>
+                  <p ng-show="registerForm.lastname.$invalid && registerForm.lastname.$touched" class="help-block">You Lastname is required.</p>
+                  <label class="item item-select" id="register-select1">
+                      <span class="input-label">Gender</span>
+                      <select name="gender" ng-model="user.Gender" required>
+                          <option value="">Please Select</option>
+                          <option value="M">Male</option>
+                          <option value="F">Female</option>
+                      </select>
+                  </label>
+                  <p ng-show="registerForm.gender.$invalid && registerForm.gender.$touched" class="help-block">You Gender is required.</p>
+                  <label class="item item-input" id="register-input9">
+                      <span class="input-label">Email</span>
+                      <input type="email" name="email" class="customstyle" ng-model="user.EmailId" placeholder="Enter your email" required>
+                  </label>
+                  <p ng-show="registerForm.email.$invalid && registerForm.email.$touched" class="help-block">You Mail Id is required.</p>
+
+                  <label class="item item-input" id="register-input13">
+                      <span class="input-label">Mobile</span>
+                      <input type="tel" name="mobile" class="customstyle" ng-model="user.PhoneNo" placeholder="Enter your mobile No." required>
+                  </label>
+                  <p ng-show="registerForm.mobile.$invalid && registerForm.mobile.$touched" class="help-block">Your Phone Number is required.</p>
+                  <label class="item item-input" id="register-input10">
+                      <span class="input-label">Password</span>
+                      <input type="password" name="password" class="customstyle" ng-model="user.Password" placeholder="enter password" required>
+                  </label>
+                  <p ng-show="registerForm.password.$invalid && registerForm.password.$touched" class="help-block">Password is required.</p>
+                  <label class="item item-input" id="register-input14">
+                      <span class="input-label">Confirm Password</span>
+                      <input type="password" class="customstyle" name="re_password" ng-blur="validatePassword()" ng-model="user.cnfPassword" placeholder="Re-enter password" required>
+                  </label>
+                  <p ng-show="registerForm.re_password.$invalid && registerForm.re_password.$touched" class="help-block">Please re-enter the password.</p>
+                  <p class="help-block">{{password_error}}</p>
+                  <label class="item item-input" id="register-input15">
+                      <span class="input-label">Address</span>
+                      <input type="text" class="customstyle" ng-model="user.Address" placeholder="enter your address">
+                  </label>
+                  <label class="item item-input" id="register-input16">
+                      <span class="input-label">City</span>
+                      <input type="text" class="customstyle" ng-model="user.City" placeholder="enter your city">
+                  </label>
+                  <label class="item item-input" id="register-input17">
+                      <span class="input-label">PostalCode</span>
+                      <input type="number" class="customstyle" ng-model="user.PostalCode" placeholder="enter your pincode" required>
+                  </label>
+                  <label class="item item-input" id="register-input21">
+                      <span class="input-label">DateOfBirth</span>
+                      <input type="date" class="customstyle" ng-model="user.DOB" placeholder="Enter date of birth" required>
+                  </label>
+                  <label class="item item-select" id="register-select2">
+                      <span class="input-label">Maritial Status</span>
+                      <select ng-model="user.MaritalStatus" ng-change="maritialstatus()">
+                          <option ng-value="false">Single</option>
+                          <option ng-value="true">Married</option>
+
+                      </select>
+
+                  </label>
+                  <div ng-if="user.MaritalStatus=='true'">
+                      <label class="item item-input" id="register-input23">
+                          <span class="input-label">SpouceName</span>
+                          <input type="text" class="customstyle" ng-model="user.SpouceName" placeholder="enter your spouce name">
+                      </label>
+                      <label class="item item-input" id="register-input24">
+                          <span class="input-label">Spouce DOB</span>
+                          <input type="date" class="customstyle" ng-model="user.SpouceDOB" placeholder="enter spouce DOB">
+                      </label>
+                      <label class="item item-input" id="register-input25">
+                          <span class="input-label">Marriage Date</span>
+                          <input type="date" class="customstyle" ng-model="user.MarriageDate" placeholder="Please enter marriage date">
+                      </label>
+                  </div>
+
+
+              </ion-list>
+              <label>{{errMessage}}</label>
+              <button type="submit" id="register-button48" ng-disabled="registerForm.$invalid" class="button button-assertive button-block">Sign up</button>
+          </form>
+      </div>
   </ion-content>
 </ion-view>

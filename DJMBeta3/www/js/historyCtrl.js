@@ -2,7 +2,7 @@ angular.module('history', ['ngResource'])
     .controller('historyCtrl', ['$scope', '$http', '$stateParams', '$state','userHistoryInformation',
 function ($scope,$http, $stateParams, $state, userHistoryInformation) {
      $scope.userHistoryInformation = userHistoryInformation;
-    // $http.get("http://djmwebapi.djmjewels.com/PaymentHistory/1135").then(function (response) {
+    // $http.get("http://localhost/DJMServices/PaymentHistory/1135").then(function (response) {
 
     //    $scope.userHistoryInformation1 = response.data;
     //});

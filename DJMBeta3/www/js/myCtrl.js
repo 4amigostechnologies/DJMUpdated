@@ -8,7 +8,7 @@ function ($scope, $http, $window, $state, $stateParams, $location, loginService)
     console.log("hi");
 
     $scope.ButtonClick = function () {
-        $http.get("http://djmwebapi.djmjewels.com/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
+        $http.get("http://localhost/DJMServices/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
             function (respons) {
                 var temp = respons.data;
                 console.log(temp);

@@ -8,7 +8,7 @@ angular.module('login', ['ngResource'])
           console.log("hi");
           //var api_url = BlankFactory.getAPIUrl();
           $scope.ButtonClick = function () {
-              $http.get("http://djmwebapi.djmjewels.com/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
+              $http.get("http://192.168.3.11/DJMServices/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
                  function (respons) {
                      var temp = respons.data;
                      console.log(temp);
@@ -21,7 +21,7 @@ angular.module('login', ['ngResource'])
                          $rootScope.profileName = temp[0].FirstName + temp[0].LastName;
                          document.getElementById("menu-list-item2").style.display = "none";
                          document.getElementById("menu-list-item9").style.display = "block";
-                         loginService.setObject(temp);
+                         loginService.setObject(temp,true);
 
                          $state.go('tabsController.dJMJewels');
                      } else {

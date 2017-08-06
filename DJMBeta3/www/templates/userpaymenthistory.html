@@ -1,21 +1,22 @@
-<ion-view title="Payment History" id="page17">
+<ion-view title="Payment History" id="page17" style="background-color: #e2e2e2">
     
   <ion-content padding="true" class="has-header">
-    <div class="list" id="cardDetails-card23"> 
+    <div class="list" id="cardDetails-card23" style="margin:5px"> 
              
        <ion-list>
                 <div ng-repeat="payment in userHistoryInformation">
-                    <ion-item class="item-stable" ng-click="toggleGroup(payment)" ng-class="{active: isGroupShown(payment)}">
+                    <ion-item class="item-stable" style="border: solid 1px; margin: 10px auto; border-radius: 5px" ng-click="toggleGroup(payment)" ng-class="{active: isGroupShown(payment)}">
                         
                        
-                        <b>{{payment.PaymentDate}} &nbsp; <br />Transaction Number {{payment.TransactionNumber}}  &nbsp; <i class="icon" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i></b>
+                        <b>You have paid &#8377 {{payment.Amount}} on {{payment.PaymentDate}}&nbsp; <i class="icon item-icon-right" ng-class="isGroupShown(payment) ? 'ion-minus' : 'ion-plus'"></i></b>
                     </ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">PaymentID : {{payment.PaymentId}}</ion-item>
+                    <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Transaction No. : {{payment.TransactionNumber}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Scheme Name : {{payment.Name}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Card NUmber : {{payment.CardNo}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Month : {{payment.Month}}</ion-item>
                     <ion-item class="item-accordion" ng-show="isGroupShown(payment)">PaymentMode : {{payment.PaymentMode}}</ion-item>
-                    <ion-item class="item-accordion" ng-show="isGroupShown(payment)">Amount : {{payment.Amount}}</ion-item>
+                    
                 </div>
         </ion-list>     
     </div>

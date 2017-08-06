@@ -9,7 +9,7 @@ function ($scope, $rootScope, $stateParams, $http, loginService) {
         DefinedAmount:""
     }
 
-    $http.get("http://djmwebapi.djmjewels.com/SchemeSubscriptions/CardNumbers").then(function (response) {
+    $http.get("http://localhost/DJMServices/SchemeSubscriptions/CardNumbers").then(function (response) {
         console.log(response.data);
         $scope.cardNumbers = response.data;
     }, function (response) {
@@ -30,14 +30,19 @@ function ($scope, $rootScope, $stateParams, $http, loginService) {
     
     $scope.joinScheme = function () {
        // console.log(card_no, card_name, amount);
-        post_url = "http://djmwebapi.djmjewels.com/SchemeScubscriptions/NewUserSubscription?UserID=" + $scope.UserID + "&SchemeID=" + $scope.SchemeId + "&CardNo=" + $scope.card_details.cardNumber + "&CardName=" + $scope.card_details.cardName + "&DefinedAmount=" + $scope.card_details.DefinedAmount + "&BatchCode=" + $scope.batchCode;
-        $http.post(post_url, config).then(function (response) {
-            console.log(response.data);
-            $scope.errMessage = "success";
-        }, function (response) {
-            $scope.errMessage = response.statusText;
-            console.log(response);
-        });
+        post_url = "http://localhost/DJMServices/SchemeScubscriptions/NewUserSubscription?UserID=" + $scope.UserID + "&SchemeID=" + $scope.SchemeId + "&CardNo=" + $scope.card_details.cardNumber + "&CardName=" + $scope.card_details.cardName + "&DefinedAmount=" + $scope.card_details.DefinedAmount + "&BatchCode=" + $scope.batchCode;
+        setTimeout(function () {
+            $http.post(post_url, config).then(function (response) {
+                console.log(response.data);
+                $scope.errMessage = "success";
+            }, function (response) {
+                $scope.errMessage = response.statusText;
+                console.log(response);
+            })
+
+        }, 50000);
+        
+       
 
     }
 }]);

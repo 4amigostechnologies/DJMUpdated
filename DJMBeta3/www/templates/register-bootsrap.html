@@ -1,0 +1,135 @@
+﻿<ion-view title="Register" id="register-page" hide-nav-bar="true" style="background-color:#ef473a" ng-controller="registerCtrl">
+    <!--<div class="bar bar-header bar-assertive" style="top:0px">
+        
+    </div>-->
+    
+    <ion-content padding="true">
+        <center><h3 style="color:white;margin-top:5px">Registration</h3></center>
+        <!--<div class="spacer" style="width: 300px; height: 60px;"></div>-->
+        <div class="item-body" style="border:solid white 1px;border-radius:10px;margin:5px;background-color:white">
+            
+            <form name="registerForm" ng-submit="register()">
+                <div class="spacer" style="width: 300px; height: 5px;"></div>
+                <!-- First NAME -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.name.$invalid && registerForm.name.$touched }">
+                    <label>First Name</label>
+                    <input type="text" name="name" class="form-control" ng-model="user.FirstName" required>
+                    <p ng-show="registerForm.name.$invalid && registerForm.name.$touched" class="help-block">You name is required.</p>
+                </div>
+
+                <!-- LastNAME -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.lastname.$invalid && registerForm.lastname.$touched }">
+                    <label>Last Name</label>
+                    <input type="text" name="lastname" class="form-control" ng-model="user.LastName" ng-minlength="3" ng-maxlength="8">
+                    <p ng-show="registerForm.lastname.$error.minlength" class="help-block">Username is too short.</p>
+                    <p ng-show="registerForm.lastname.$error.maxlength" class="help-block">Username is too long.</p>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.email.$invalid && registerForm.email.$touched }">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" ng-model="user.EmailId">
+                    <p ng-show="registerForm.email.$invalid && registerForm.email.$touched" class="help-block">Enter a valid email.</p>
+                </div>
+                <!-- Gender -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.gender.$invalid && registerForm.gender.$touched }">
+                    <label>Gender</label>
+                    <select name="gender" ng-model="user.Gender" required>
+                        <option value="">Please Select</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <p ng-show="registerForm.gender.$invalid && registerForm.gender.$touched" class="help-block">Your Gender is required.</p>
+                </div>
+                <!-- Mobile Number-->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.mobile.$invalid && registerForm.mobile.$touched }">
+                    <label>Phone Number</label>
+                    <input type="tel" name="mobile" class="form-control" ng-model="user.PhoneNo" required>
+                    <p ng-show="registerForm.mobile.$invalid && registerForm.mobile.$touched" class="help-block">Your Mobile number is required.</p>
+                </div>
+                <!--Password-->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.password.$invalid && registerForm.password.$touched }">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" ng-model="user.Password" required>
+                    <p ng-show="registerForm.password.$invalid && registerForm.password.$touched" class="help-block">Your password is required.</p>
+                </div>
+                <!--Confirm Password-->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.re_password.$invalid && registerForm.re_password.$touched }">
+                    <label>Confirm Password</label>
+                    <input type="password" name="re_password" class="form-control" ng-blur="validatePassword()" ng-model="user.cnfPassword" required>
+                    <p ng-show="registerForm.re_password.$invalid && registerForm.re_password.$touched" class="help-block">Please Re-Enter the password.</p>
+                    <p class="help-block">{{password_error}}</p>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.address.$invalid && registerForm.address.$touched }">
+                    <label>Address</label>
+                    <input type="text" name="address" class="form-control" ng-model="user.Address" required>
+                    <p ng-show="registerForm.address.$invalid && registerForm.address.$touched" class="help-block">Your Address is required.</p>
+                </div>
+
+                <!-- City -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.city.$invalid && registerForm.city.$touched }">
+                    <label>City</label>
+                    <input type="text" name="city" class="form-control" ng-model="user.City" required>
+                    <p ng-show="registerForm.city.$invalid && registerForm.city.$touched" class="help-block">Your City is required.</p>
+                </div>
+
+                <!-- Postal Code -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.postalcode.$invalid && registerForm.postalcode.$touched }">
+                    <label>Postal Code</label>
+                    <input type="number" name="postalcode" class="form-control" ng-model="user.PostalCode" required>
+                    <p ng-show="registerForm.postalcode.$invalid && registerForm.postalcode.$touched" class="help-block">Your Postal code is required.</p>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group" ng-class="{ 'has-error' : registerForm.dob.$invalid && registerForm.dob.$touched }">
+                    <label>Date Of Birth</label>
+                    <input type="date" name="dob" class="form-control" ng-model="user.DOB" required>
+                    <p ng-show="registerForm.dob.$invalid && registerForm.dob.$touched" class="help-block">You Date Of Birth is required.</p>
+                </div>
+
+                <!-- Maritial Status -->
+                <div class="form-group">
+                    <label>Maritial Status</label>
+                    <select name="maritialstatus" ng-model="user.MaritalStatus" ng-change="maritialstatus()">
+                        <option ng-value="false">Single</option>
+                        <option ng-value="true">Married</option>
+
+                    </select>
+                </div>
+
+                <div ng-if="user.MaritalStatus=='true'">
+                    <!-- Spouce Name -->
+                    <div class="form-group" ng-class="{ 'has-error' : registerForm.spname.$invalid && registerForm.spname.$touched }">
+                        <label>Spouce Name</label>
+                        <input type="text" name="spname" class="form-control" ng-model="user.SpouceName" placeholder="enter your spouce name">
+                        <p ng-show="registerForm.spname.$invalid && registerForm.spname.$touched" class="help-block">Spouce Name is required.</p>
+                    </div>
+
+                    <!--Spouce Date of Birth -->
+                    <div class="form-group" ng-class="{ 'has-error' : registerForm.spdob.$invalid && registerForm.spdob.$touched }">
+                        <label>Spouce Date Of Birth</label>
+                        <input type="date" name="spdob" class="form-control" ng-model="user.SpouceDOB" placeholder="enter spouce DOB">
+                        <p ng-show="registerForm.spdob.$invalid && registerForm.spdob.$touched" class="help-block">Spouce Date Of Birth is required.</p>
+                    </div>
+
+                    <!-- Marriage Date -->
+                    <div class="form-group" ng-class="{ 'has-error' : registerForm.marriagedate.$invalid && registerForm.marriagedate.$touched }">
+                        <label>Marriage Date</label>
+                        <input type="date" name="marriagedate" class="form-control" ng-model="user.MarriageDate">
+                        <p ng-show="registerForm.marriagedate.$invalid && registerForm.marriagedate.$touched" class="help-block">Your Marriage date is required.</p>
+                    </div>
+
+                </div>
+
+                <label>{{errMessage}}</label>
+                <!--<button type="submit" id="register-button48" ng-disabled="registerForm.$invalid" class="button button-assertive button-block">Sign up</button>-->
+                <div id="register-button-bar7" class="button-bar">
+                    <button id="register-button43" type="submit" ng-disabled="registerForm.$invalid" class="button button-assertive  button-block" ng-click="ButtonClick()">Sign up</button>
+                    <a ui-sref="login" id="register-button44" class="button button-assertive  button-block">Already User?</a>
+                </div>
+            </form>
+            </div>
+</ion-content>
+</ion-view>

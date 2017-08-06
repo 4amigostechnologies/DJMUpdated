@@ -1,4 +1,15 @@
 ﻿/* Empty. Add your own CSS if you like */
+#register-page * {
+    font-family:inherit;
+}
+#register-page label{
+    font-size:16px;
+    margin-left:5px;
+}
+#register-page input{
+    font-size:16px;
+    margin-left:5px;
+}
 .class-kd {
     max-width: 100%;
     max-height: 100%;
