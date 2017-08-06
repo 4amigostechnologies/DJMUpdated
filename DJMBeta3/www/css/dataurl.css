@@ -25,7 +25,10 @@
 .pace .pace-progress-inner {
   display: block;
   position: absolute;
-  right: 0px;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom:0;
   width: 100px;
   height: 100%;
   box-shadow: 0 0 10px #d52b2f, 0 0 5px #d52b2f;
@@ -41,8 +44,12 @@
   display: block;
   position: fixed;
   z-index: 2000;
-  top: 15px;
-  right: 15px;
+  top: 0;
+  right: 0;
+  left:0;
+  bottom:0;
+  /*top: 15px;
+  right: 15px;*/
   width: 14px;
   height: 14px;
   border: solid 2px transparent;

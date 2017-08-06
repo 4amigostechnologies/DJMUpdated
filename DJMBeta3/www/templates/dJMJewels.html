@@ -2,12 +2,11 @@
   <ion-content padding="false" class="manual-remove-top-padding has-header">
       <ion-list>
           <div ng-repeat="group in groups">
-              <ion-item class="item-stable"
+              <ion-item style="border: solid 1px; margin: 10px auto; border-radius: 5px;text-align:center" class="item-stable"
                         ng-click="toggleGroup(group)"
                         ng-class="{active: isGroupShown(group)}">
+                  <b>Today's Gold Rate &#8377 {{recent_gold_rate}}</b> &nbsp;
                   <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
-                  &nbsp;
-                  <b>Today's Gold Rate &#8377 {{recent_gold_rate}}</b>
               </ion-item>
               <ion-item class="item-accordion" style="border:0" ng-repeat="day in days"
                         ng-show="isGroupShown(group)">
@@ -15,17 +14,17 @@
                </ion-item>
           </div>
       </ion-list>
-
+      <hr style="margin-top:0px; margin-bottom:0px"/>
            <div class="list-mo">
           <div id="dJMJewels-container3" class="thumb-contain">
             <ion-list id="cardDetails-list10">
-                <ion-item class="item-avatar item-icon-right assertive" 
+                <ion-item class="item-icon-right assertive" 
                           ng-repeat="userScheme in userSchemesSubscriptions" 
                           id="cardDetails-list-item30"
                           ui-sref="tabsController.userSchemeSubscriptionDetails({UserId: {{UserID}},SchemeId:'{{userScheme.SchemeId}}',CardCode:'{{userScheme.CardCode}}' })">
 
                     <!--<img src="img/Lbw7eXLQiSluh1cN0zz8_static_qr_code_without_logo.jpg">-->
-                    <img src={{qr_img_scheme_url_head}}{{userScheme.CardCode}}{{qr_img_scheme_url_tail}} alt='qr code'>
+                    <!--<img src={{qr_img_scheme_url_head}}{{userScheme.CardCode}}{{qr_img_scheme_url_tail}} alt='qr code'>-->
                     <h2energized>
                         Card Number : {{userScheme.CardNo}}
                         
