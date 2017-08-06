@@ -46,17 +46,17 @@ namespace Amigos.Data.WebAPI.Controllers
 
         [HttpPost]
         [Route("SchemeScubscriptions/NewUserSubscription")]
-        public IList<UserSchemeSubscriptionInfo> CreateNewUserSubscription(int UserID, string SchemeID, int CardNo, string CardName, double DefinedAmount)
+        public IList<UserSchemeSubscriptionInfo> CreateNewUserSubscription(int UserID, Guid SchemeID, int CardNo, string CardName, decimal DefinedAmount, string BatchCode)
         {
-            List<UserSchemeSubscriptionInfo> test = db.Database.SqlQuery<UserSchemeSubscriptionInfo>(" exec dbo.[USP_NewUserSchemeSubscription] @UserId, @SchemeId, @CardNo, @CardName, @DefinedAmount",
+            List<UserSchemeSubscriptionInfo> test = db.Database.SqlQuery<UserSchemeSubscriptionInfo>(" exec dbo.[USP_NewUserSchemeSubscription] @UserId, @SchemeId, @CardNo, @CardName, @DefinedAmount, @BatchCode",
                 new SqlParameter("@UserId", UserID),
                 new SqlParameter("@SchemeId", SchemeID),
                 new SqlParameter("@CardNo", CardNo),
                 new SqlParameter("@CardName", CardName),
-                new SqlParameter("@DefinedAmount", DefinedAmount)).ToList();
+                new SqlParameter("@DefinedAmount", DefinedAmount),
+                new SqlParameter("@BatchCode", BatchCode)).ToList();
 
             return test;
         }
-
     }
 }

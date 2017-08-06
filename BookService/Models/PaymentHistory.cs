@@ -9,13 +9,17 @@ namespace Amigos.Data.WebAPI.Models
     {
         public int UserId { get; set; }
 
+        public string TransactionNumber { get; set; }
+
+        public string PaymentDate { get; set; }
+
         public int PaymentId { get; set; }
 
         public string Name { get; set; }
 
         public int CardNo { get; set; }
 
-        public int Month { get; set; }
+        public string Month { get; set; }
 
         public string PaymentMode { get; set; }
 
