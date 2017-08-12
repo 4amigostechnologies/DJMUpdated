@@ -1,0 +1,62 @@
+<div ng-app="ionic_starter">
+    <ion-nav-view></ion-nav-view>
+    <popup-menu></popup-menu>
+</body>
+
+<script id="popup-menu.html" type="text/ng-template">
+<div class="popup-menu">
+  <div class="popup-menu-overlay" ng-class="{'in': menu_is_open}" ng-click="togglePopupMenu()"></div>
+  <i class="ion ion-grid popup-menu-toggle" ng-click="togglePopupMenu()" ng-class="{'out': menu_is_open}"></i>
+  <div class="popup-menu-panel" ng-class="{'in': menu_is_open}">
+    <div class="popup-menu-item" ui-sref="#" ng-click="togglePopupMenu()">
+      <i class="ion ion-home"></i>
+      <span>HOME</span>
+    </div>
+    <div class="popup-menu-item" ng-click="togglePopupMenu()">
+      <i class="ion ion-trophy"></i>
+      <span>CUPS</span>
+    </div>
+    <div class="popup-menu-item" ng-click="togglePopupMenu()">
+      <i class="ion ion-podium"></i>
+      <span>LEADERBOARD</span>
+    </div>
+    <div class="popup-menu-item" ng-click="togglePopupMenu()">
+      <i class="ion ion-help"></i>
+      <span>HELP</span>
+    </div>
+    <div class="popup-menu-item" ng-click="togglePopupMenu()">
+      <i class="ion ion-person"></i>
+      <span>ACCOUNT</span>
+    </div>
+    <div class="popup-menu-item" ng-click="togglePopupMenu();">
+      <i class="ion ion-bag"></i>
+      <span>SHOP</span>
+    </div>
+  </div>
+</div>
+</script>
+
+
+<script id="menu.html" type="text/ng-template">
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-calm">
+            <ion-nav-title>PopupMenu</ion-nav-title>
+        </ion-nav-bar>
+        <ion-nav-view animation="slide-left-right" name="menu_content"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-nav-view>
+            <div class="list">
+                <div class="item">Home</div>
+            </div>
+        </ion-nav-view>
+    </ion-side-menu>
+</ion-side-menus>
+</script>
+
+<script id="home.html" type="text/ng-template">
+<ion-view>
+	<ion-content padding="true"></ion-content>
+ </ion-view>
+</script>

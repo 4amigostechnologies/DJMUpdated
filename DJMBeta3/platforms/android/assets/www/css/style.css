@@ -1,4 +1,13 @@
 ﻿/* Empty. Add your own CSS if you like */
+#register-page * {
+    font-family:inherit;
+}
+#register-page label{
+    font-size:16px;
+}
+#register-page input{
+    font-size:16px;
+}
 .class-kd {
     max-width: 100%;
     max-height: 100%;
@@ -113,7 +122,7 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
   transition: 0.09s all linear;
 }
 .list .item.item-accordion:nth-child(odd) {
-   background-color: #efc2d2;
+   background-color: ghostwhite;
 }
 .list .item.item-accordion.ng-hide {
   line-height: 0px;
@@ -121,4 +130,14 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
 .list .item.item-accordion.ng-hide-add,
 .list .item.item-accordion.ng-hide-remove {
   display: block !important;
+}
+
+.customstyle {
+    border-style:solid;
+    border-color:red;
+    border-width:1px;
+}
+.help-block{
+    text-align:center;
+    color:red;
 }

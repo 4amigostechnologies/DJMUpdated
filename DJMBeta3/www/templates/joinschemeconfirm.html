@@ -1,0 +1,14 @@
+<ion-view title="Join Scheme" ng-controller="JoinSchemeConfirmCtrl" id="JoinSchemeConfirmation" style="background-color: ghostwhite" >
+  <ion-content padding="false" class="has-header">
+   <h5 style="margin:10px">Please confirm and Proceed to Pay</h5>
+      <ion-list id="cardDetails-list11">
+             <ion-item id="cardDetails-list-item39"><b>Scheme Name:</b> {{schemeName}}</ion-item>
+             <ion-item id="cardDetails-list-item39"><b>Batch Code:</b> {{batchCode}}</ion-item>
+             <ion-item id="cardDetails-list-item39"><b>Card Number:</b> {{CardNo}}</ion-item>
+             <ion-item id="cardDetails-list-item41"><b>Term:</b> {{Term}} Months </ion-item>
+             <ion-item id="cardDetails-list-item39"><b>Installment Amount:</b>{{Amount}}</ion-item>
+             
+      </ion-list>
+             <button id="joinschemepay" ng-click="confirm_join()" class="button button-assertive button-small button-block">Pay</button>
+   </ion-content>
+</ion-view>

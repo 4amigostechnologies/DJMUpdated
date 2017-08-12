@@ -1,0 +1,78 @@
+<ion-view title="{{profileName}} Scheme Cards" id="myschemecards" style="background-color: ghostwhite" ng-controller="UserSchemeCardsCtrl">
+  <ion-content padding="false" class="manual-remove-top-padding has-header">
+      <h5 style="margin:10px">{{profileName}}, you have following Scheme Cards</h5>
+
+      <!--<div class="list-mo">-->
+      <ion-list id="LLcardDetails">
+          <div id="LLcontainer" class="thumb-contain" style="background-color:lightgreen; border: solid 1px ghostwhite; margin-top:5px;margin-bottom:5px; margin-left: 20px; margin-right:20px; border-radius: 5px">
+              <h4 style="margin:10px;margin-bottom:1px;background-color:forestgreen; padding:2px; text-align:center; color:white">Lucky Lakshmi</h4>
+              <div ng-repeat="userScheme in lucky_lakshmi" style="background-color:lightgreen">
+                  <ion-item class="item-stable item-text-wrap" style="padding:0px;border: none 1px gray;margin:15px;margin-bottom:1px; margin-top:0px; border-radius: 5px;font-size:small" ng-click="toggleGroup(userScheme)" ng-class="{active: isGroupShown(userScheme)}">
+                      <b style="margin-left:5px">Card Number : {{userScheme.CardNo}} - {{userScheme.CardName}}</b>
+                      <!--<p>{{userScheme.CardCode}} </p>-->
+                      <!--<p> Scheme : {{userScheme.SchemeName}} </p>-->
+                      <!--<i class="icon ion-android-options"></i>-->
+                  </ion-item>
+                  <div style="border: solid 1px gray; margin-top:0px; margin-bottom:5px; margin-left: 25px; margin-right:25px; border-radius: 5px">
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">CardName : {{userScheme.CardName}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Amount : {{userScheme.Amount}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Number : {{userScheme.BatchCode}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Months : {{userScheme.BatchMonths}}</ion-item>
+                  </div>
+              </div>
+
+          </div>
+      </ion-list>
+      <ion-list id="GPBcardDetails">
+          <div id="GPBcontainer" class="thumb-contain" style="background-color:gold; border: solid 1px ghostwhite; margin-top:5px; margin-left: 20px; margin-right:20px; border-radius: 5px">
+              <h4 style="margin:10px;margin-bottom:1px;background-color:darkgoldenrod; padding:2px; text-align:center; color:white">Golden Piggy Bank</h4>
+              <div ng-repeat="userScheme in golden_piggy_bank" style="background-color:gold">
+                  <ion-item class="item-stable item-text-wrap" style="padding:0px;border: none 1px gray;margin:15px;margin-bottom:1px; margin-top:0px; border-radius: 5px;font-size:small" ng-click="toggleGroup(userScheme)" ng-class="{active: isGroupShown(userScheme)}">
+                      <b style="margin-left:5px">Card Number : {{userScheme.CardNo}} - {{userScheme.CardName}}</b>
+                  </ion-item>
+                  <div style="border: solid 1px gray; margin-top:0px; margin-bottom:5px; margin-left: 25px; margin-right:25px; border-radius: 5px">
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">CardName : {{userScheme.CardName}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Amount : {{userScheme.Amount}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Number : {{userScheme.BatchCode}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Months : {{userScheme.BatchMonths}}</ion-item>
+                  </div>
+              </div>
+          </div>
+      </ion-list>
+
+      <ion-list id="BBcardDetails">
+          <div id="BBcontainer" class="thumb-contain" style="background-color:lightblue; border: solid 1px ghostwhite; margin-top:5px; margin-left: 20px; margin-right:20px; border-radius: 5px">
+              <h4 style="margin:10px;margin-bottom:1px;background-color:steelblue; padding:2px; text-align:center; color:white">Bale Bangara</h4>
+              <div ng-repeat="userScheme in bale_bangara" style="background-color:lightblue">
+                  <ion-item class="item-stable item-text-wrap" style="padding:0px;border: none 1px gray;margin:15px;margin-bottom:1px; margin-top:0px; border-radius: 5px;font-size:small" ng-click="toggleGroup(userScheme)" ng-class="{active: isGroupShown(userScheme)}">
+                      <b style="margin-left:5px">Card Number : {{userScheme.CardNo}} - {{userScheme.CardName}} </b>
+                  </ion-item>
+                  <div style="border: solid 1px gray; margin-top:0px; margin-bottom:5px; margin-left: 25px; margin-right:25px; border-radius: 5px">
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">CardName : {{userScheme.CardName}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Amount : {{userScheme.Amount}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Number : {{userScheme.BatchCode}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Months : {{userScheme.BatchMonths}}</ion-item>
+                  </div>
+              </div>
+          </div>
+      </ion-list>
+
+      <ion-list id="KDcardDetails">
+          <div id="KDcontainer" class="thumb-contain" style="background-color:lightskyblue; border: solid 1px ghostwhite; margin-top:5px; margin-left: 20px; margin-right:20px; border-radius: 5px">
+              <h4 style="margin:10px;margin-bottom:1px;background-color:deepskyblue; padding:2px; text-align:center; color:white">Kanakadhara</h4>
+              <div ng-repeat="userScheme in kanaka_dhara" style="background-color:lightskyblue">
+                  <ion-item class="item-stable item-text-wrap" style="padding:0px;border: none 1px gray;margin:15px;margin-bottom:1px; margin-top:0px; border-radius: 5px;font-size:small" ng-click="toggleGroup(userScheme)" ng-class="{active: isGroupShown(userScheme)}">
+                      <b style="margin-left:5px">Card Number : {{userScheme.CardNo}} - {{userScheme.CardName}} </b>
+                  </ion-item>
+                  <div style="border: solid 1px gray; margin-top:0px; margin-bottom:5px; margin-left: 25px; margin-right:25px; border-radius: 5px">
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">CardName : {{userScheme.CardName}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Amount : {{userScheme.Amount}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Number : {{userScheme.BatchCode}}</ion-item>
+                      <ion-item class="item-accordion" style="margin:1px" ng-show="isGroupShown(userScheme)">Batch Months : {{userScheme.BatchMonths}}</ion-item>
+                  </div>
+              </div>
+          </div>
+      </ion-list>
+     
+</ion-content>
+</ion-view>

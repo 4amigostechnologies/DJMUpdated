@@ -28,7 +28,7 @@ angular.module('app.routes', [])
         controller: 'schemesCtrl',
          resolve: {
                   //schemeDetails1:  function ($resource, $stateParams) {
-                  //    var post = $resource('http://localhost/DJMServices/schemes/:schemeId', { schemeId: '@schemeId' });
+             //    var post = $resource('http://localhost/DJMServices/schemes/:schemeId', { schemeId: '@schemeId' });
                   //    return post.query({'schemeId':$stateParams.schemeId}).$promise; 
                   //  },
                   schemeParameter1: function ($resource, $stateParams) {
@@ -41,9 +41,9 @@ angular.module('app.routes', [])
     }
   })
 .state('tabsController.userSchemeSubscriptionDetails', {
-    url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode',
+    url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode/:SchemeName',
     views: {
-        'tab2': {
+        'tab3': {
             templateUrl: 'templates/cardDetails.html',
             controller: 'UserSchemeDetailsCtrl',
             resolve: {
@@ -73,7 +73,17 @@ angular.module('app.routes', [])
 
 
 
-})
+ })
+
+ .state('tabsController.UserSchemeCards', {
+          url: '/UserSchemeCards/',
+          views: {
+              'tab3': {
+                  templateUrl: 'templates/myschemecards.html',
+                  controller: 'UserSchemeCardsCtrl',
+                  }
+              }
+  })
 
   .state('tabsController.contactUs', {
     url: '/contactus',
@@ -86,11 +96,20 @@ angular.module('app.routes', [])
   })
 
       .state('tabsController.joinScheme', {
-          url: '/joinScheme',
+          url: '/joinScheme/:schemename/:batchCode:/:schemeId/:Term/:InstallmentAmount',
           views: {
               'tab3': {
                   templateUrl: 'templates/joinScheme.html',
                   controller: 'schemejoinCtrl'
+              }
+          }
+      })
+      .state('tabsController.joinschemeconfirm', {
+          url: '/joinschemeconfirm/:userid/:batchCode:/:schemeId/:Amount/:DefinedAmount/:CardNo/:PaymentMode/:SchemeName/:Term/:CardName',
+          views: {
+              'tab3': {
+                  templateUrl: 'templates/joinschemeconfirm.html',
+                  controller: 'JoinSchemeConfirmCtrl'
               }
           }
       })
@@ -125,7 +144,7 @@ angular.module('app.routes', [])
 
    .state('register', {
      url: '/register',
-     templateUrl: 'templates/register.html',
+     templateUrl: 'templates/register-bootsrap.html',
      controller: 'registerCtrl'
    }) 
   .state('fAQ', {

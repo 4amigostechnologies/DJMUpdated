@@ -7,9 +7,9 @@ namespace DJMServices.Models
 {
     public class CardNumbers
     {
-        public int Id { get; set; }
+        // public int Id { get; set; }
 
-        public int CardNo { get; set; }
+        public int AvblCardNumber { get; set; }
 
     }
 }

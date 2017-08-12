@@ -50,6 +50,8 @@ namespace Amigos.Data.WebAPI.Controllers
             return test;
         }
 
+        
+
         //[HttpPost]
         //[Route("UserProfiles")]
         //public IList<UserProfile> CreateNewUser(string FirstName, string LastName, string Gender, string EmailID, string PhoneNo, string Password, string Address, 

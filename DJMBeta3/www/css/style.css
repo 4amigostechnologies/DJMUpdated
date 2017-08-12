@@ -122,7 +122,7 @@ $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
   transition: 0.09s all linear;
 }
 .list .item.item-accordion:nth-child(odd) {
-   background-color: #efc2d2;
+   background-color: ghostwhite;
 }
 .list .item.item-accordion.ng-hide {
   line-height: 0px;

@@ -4,7 +4,7 @@
     <ReferenceCachePath>C:\Users\4amigos\AppData\Local\Temp\yh30f1k3_DJMBeta3_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
+    <DebuggerFlavor>SimulateGalaxyS5</DebuggerFlavor>
     <AndroidEmulatorID>AndroidDevice;Device</AndroidEmulatorID>
   </PropertyGroup>
 </Project>

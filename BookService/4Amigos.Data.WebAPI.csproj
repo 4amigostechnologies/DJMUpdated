@@ -161,6 +161,7 @@
     <Compile Include="Controllers\PaymentHistoryController.cs" />
     <Compile Include="Controllers\SchemesController.cs" />
     <Compile Include="Controllers\BaleBangaraController.cs" />
+    <Compile Include="Models\UserCardsSchemeData.cs" />
     <Compile Include="Controllers\UserProfileController.cs" />
     <Compile Include="Controllers\UserSubscriptionsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -171,6 +172,8 @@
     <Compile Include="Models\SchemeDetail.cs" />
     <Compile Include="Models\SchemeParameters.cs" />
     <Compile Include="Models\BaleBangaraDatas.cs" />
+    <Compile Include="Models\UserPaymentReminders.cs" />
+    <Compile Include="Models\UserPayments.cs" />
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Models\JewelRate.cs" />
     <Compile Include="Models\Migrations\201406131812509_Initial.cs">

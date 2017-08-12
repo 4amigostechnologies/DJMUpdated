@@ -8,7 +8,7 @@ angular.module('login', ['ngResource'])
           console.log("hi");
           //var api_url = BlankFactory.getAPIUrl();
           $scope.ButtonClick = function () {
-              $http.get("http://192.168.3.11/DJMServices/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
+              $http.get("http://localhost/DJMServices/UserProfiles/GetUserProfileOfAUser?strUserName=" + $scope.mobile + "&strPassword=" + $scope.password).then(
                  function (respons) {
                      var temp = respons.data;
                      console.log(temp);

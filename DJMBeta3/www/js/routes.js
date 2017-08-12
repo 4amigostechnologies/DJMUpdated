@@ -41,7 +41,7 @@ angular.module('app.routes', [])
     }
   })
 .state('tabsController.userSchemeSubscriptionDetails', {
-    url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode',
+    url: '/userSchemeSubscriptionDetails/:UserId/:SchemeId/:CardCode/:SchemeName',
     views: {
         'tab3': {
             templateUrl: 'templates/cardDetails.html',
@@ -73,7 +73,17 @@ angular.module('app.routes', [])
 
 
 
-})
+ })
+
+ .state('tabsController.UserSchemeCards', {
+          url: '/UserSchemeCards/',
+          views: {
+              'tab3': {
+                  templateUrl: 'templates/myschemecards.html',
+                  controller: 'UserSchemeCardsCtrl',
+                  }
+              }
+  })
 
   .state('tabsController.contactUs', {
     url: '/contactus',
@@ -86,11 +96,20 @@ angular.module('app.routes', [])
   })
 
       .state('tabsController.joinScheme', {
-          url: '/joinScheme/:schemename/:batchCode:/:schemeId',
+          url: '/joinScheme/:schemename/:batchCode:/:schemeId/:Term/:InstallmentAmount',
           views: {
               'tab3': {
                   templateUrl: 'templates/joinScheme.html',
                   controller: 'schemejoinCtrl'
+              }
+          }
+      })
+      .state('tabsController.joinschemeconfirm', {
+          url: '/joinschemeconfirm/:userid/:batchCode:/:schemeId/:Amount/:DefinedAmount/:CardNo/:PaymentMode/:SchemeName/:Term/:CardName',
+          views: {
+              'tab3': {
+                  templateUrl: 'templates/joinschemeconfirm.html',
+                  controller: 'JoinSchemeConfirmCtrl'
               }
           }
       })

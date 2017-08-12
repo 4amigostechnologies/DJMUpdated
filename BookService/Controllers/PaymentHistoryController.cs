@@ -21,5 +21,22 @@ namespace Amigos.Data.WebAPI.Controllers
 
             return test;
         }
+
+        [HttpPost]
+        [Route("UserPayments/{UserId}/{SchemeID}/{LoginID}/{Amount}/{DefinedAmount}/{CardNo}/{BatchCode}/{PaymentMode}")]
+        public IList<UserPayments> CreateUserPayments(int UserId, Guid SchemeID, int LoginID, decimal Amount, decimal DefinedAmount, int CardNo, string BatchCode, string PaymentMode)
+        {
+            List<UserPayments> test = db.Database.SqlQuery<UserPayments>(" exec dbo.[USP_CreatePayments] @UserID, @SchemeID, @LoginID, @Amount, @DefinedAmount, @CardNo, @BatchCode, @PaymentMode",
+                new SqlParameter("@UserID", UserId),
+                new SqlParameter("@SchemeID", SchemeID),
+                new SqlParameter("@LoginID", LoginID),
+                new SqlParameter("@Amount", Amount),
+                new SqlParameter("@DefinedAmount", DefinedAmount),
+                new SqlParameter("@CardNo", CardNo),
+                new SqlParameter("@BatchCode", BatchCode),
+                new SqlParameter("@PaymentMode", PaymentMode)).ToList();
+
+            return test;
+        }
     }
 }

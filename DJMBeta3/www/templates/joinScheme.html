@@ -1,37 +1,43 @@
-<ion-view title="Join Scheme" id="page19">
+<ion-view title="Join Scheme" id="joinScheme" style="background-color: ghostwhite">
   <ion-content padding="true" class="has-header">
-    <form id="joinScheme-form5" class="list">
-      <label class="item item-input" id="joinScheme-input12">
-        <span class="input-label">Name</span>
-        <input type="text" placeholder="" value="{{profileName}}">
-      </label>
-      <label class="item item-input" id="joinScheme-input15">
-        <span class="input-label">Scheme Name:{{schemeName}}</span>
-        
-      </label>
-      <label class="item item-select" id="joinScheme-select3" name="cardnumber">
-        <span class="input-label">Select Card No</span>
-          <select ng-options="card.Id as card.CardNo for card in cardNumbers track by card.Id" ng-model="card_details.cardNumber"></select>
-      </label>
-       <label>Your selected card number: {{card_details.cardNumber}}</label> 
-      <label class="item item-input" id="joinScheme-input18">
-        <span class="input-label">Card Name</span>
-        <input type="text" ng-model="card_details.cardName" placeholder="">
-      </label>
-      <label class="item item-input" id="joinScheme-input16">
-        <span class="input-label">Amount</span>
-        <input type="number" placeholder="" ng-model="card_details.DefinedAmount">
-      </label>
-      <label class="item item-select" id="joinScheme-select2" name="paymenttype">
-        <span class="input-label">Payment Type</span>
-        <select>
-          <option>Cash</option>
-          <option>Online Payment</option>
-        </select>
-      </label>
-        <button id="joinScheme-button61" class="button button-assertive button-small button-block" ng-click="joinScheme()">Join</button>
-    </form>
-    
+      <div style="border: solid 1px ghostwhite; margin-top:10px; margin-left: 20px; margin-right:20px; border-radius: 5px;padding-top:1px;padding-bottom:1px;background-color:white">
+          <p style="margin:5px;background-color:white;text-align:justify"> Thanks <b> {{profileName}}</b>, for showing the interest to join our <b>{{schemeName}}</b> Scheme. <hr />To join batch <b> {{batchCode}} </b>, please pay minimum amount of <b> &#8377 {{InstallmentAmount}}</b> for <b>{{Term}}</b> months . <br />Please select the card number and name it to proceed.</p>
+          <form id="joinScheme-form5" class="list">
+              <div style="margin:5px;border: solid 1px gray">
+              <!--<label class="item item-input" id="joinScheme-input12">
+                  <span class="input-label">Name</span>
+                  <input type="text" placeholder="" value="{{profileName}}">
+              </label>
+              <label class="item item-input" id="joinScheme-input15">
+                  <span class="input-label">Scheme Name:{{schemeName}}</span>
+              </label>-->
+              <label class="item item-select" id="joinScheme-select3" name="cardnumber">
+                  <span class="input-label">Select Card No</span>
+                  <select ng-options="card.AvblCardNumber as card.AvblCardNumber for card in cardNumbers track by card.AvblCardNumber" ng-model="card_details.cardNumber"></select>
+              </label>
+
+              <label class="item item-input" id="joinScheme-input18">
+                  <span class="input-label">Card Name</span>
+                  <input type="text" ng-model="card_details.cardName" placeholder="">
+              </label>
+            <label class="item item-input" id="joinScheme-input16">
+                  <span class="input-label">Amount</span>
+                  <input type="number" placeholder="" value={{card_details.DefinedAmount}} ng-model="card_details.DefinedAmount">
+              </label>
+             <label class="item item-select" id="joinScheme-select2" name="paymenttype">
+                  <span class="input-label">Payment Type</span>
+                  <select ng-model="card_details.payment_mode">
+                      <option value="cash">Cash</option>
+                      <option value="online">Online Payment</option>
+                  </select>
+              </label>
+                <hr/>
+              <!--<p style="margin:5px;background-color:white;text-align:justify">You have selected <b>{{card_details.cardNumber}}</b> Card Number and Named it as <b>{{card_details.cardName}} </b></p>-->
+              <button id="joinScheme-button61" class="button button-assertive button-small button-block" ng-click="joinScheme()">Pay</button>
+              </div>
+
+          </form>
+      </div>
       <div ng-bind="errMessage"></div>
   </ion-content>
 </ion-view>

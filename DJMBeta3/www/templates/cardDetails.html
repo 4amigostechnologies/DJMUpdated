@@ -1,24 +1,23 @@
-<ion-view title="card Details" id="page16" >
+<ion-view title="Card Details" id="page16" style="background-color: ghostwhite" >
   <ion-content padding="true" class="has-header">
-    <div class="list card" id="cardDetails-card23">
-      <ion-list id="cardDetails-list10">
+    <div class="list card" id="cardDetails-card23" style="background-color:white; border: solid 1px gray; margin-top:5px; margin-left: 20px; margin-right:20px; border-radius: 5px">
+      <ion-list id="CardDetails-list10">
           <div ng-repeat="schemeinfo in userSchemesSubscriptionData">
               <!--<center> <img src={{qr_img_scheme_url_head}}{{schemeinfo.CardCode}}{{qr_img_scheme_url_tail}} alt='qr code'></center>
               <p style="text-align:center;color:black;font-size:xx-small">{{schemeinfo.CardCode}}</p>-->
-              <hr />
               <ion-item id="cardDetails-list-item39"><b>Card Number:</b> {{schemeinfo.CardNumber}}</ion-item>
               <ion-item id="cardDetails-list-item39"><b>Card Name:</b> {{schemeinfo.CardName}}</ion-item>
-              <ion-item id="cardDetails-list-item39"><b>Scheme Name: </b>{{schemeinfo.Name}}</ion-item>
+              <ion-item id="cardDetails-list-item39"><b>Scheme Name: </b>{{SchemeName}}</ion-item>
               <ion-item id="cardDetails-list-item39"><b>Batch Code: </b> {{schemeinfo.BatchCode}}</ion-item>
-              <ion-item id="cardDetails-list-item40"><b>Monthly Installment:</b> {{schemeinfo.MonthlyInstallment}} </ion-item>
-              <ion-item id="cardDetails-list-item41"><b>Last Paid Amount:</b> {{schemeinfo.LastPaidAmount}} </ion-item>
-              <ion-item id="cardDetails-list-item42"><b>Last Paid Date:</b> {{schemeinfo.LastPaidDate | date}} </ion-item>
-              <hr />
+              <ion-item id="cardDetails-list-item40">Your Monthly Installment is <b> &#8377 {{schemeinfo.MonthlyInstallment}} </b> </ion-item>
+              <ion-item class="item-text-wrap" id="cardDetails-list-item41">Your Last paid Amount is <b> &#8377 {{schemeinfo.LastPaidAmount}} </b> on <b>{{schemeinfo.LastPaidDate | date}}</b> </ion-item>
+              <!--<ion-item id="cardDetails-list-item42"><b>Last Paid Date:</b> {{schemeinfo.LastPaidDate | date}} </ion-item>-->
+          </div>
+          <div id="cardDetails-button-bar8" class="button-bar">
+              <button id="cardDetails-button55" class="button button-assertive button-small button-block">Pay Now</button>
+              <button id="cardDetails-button56" class="button button-assertive button-small button-block" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">Payment History</button>
           </div>
       </ion-list>
-      <button id="cardDetails-button55" class="button button-assertive button-small button-block">Pay</button>
-      <button id="cardDetails-button56" class="button button-assertive button-small button-block" ui-sref="tabsController.userpaymenthistory({UserId: {{UserID}} })">Payment History</button>
-      <div id="cardDetails-button-bar8" class="button-bar"></div>
-    </div>
+</div>
   </ion-content>
 </ion-view>
