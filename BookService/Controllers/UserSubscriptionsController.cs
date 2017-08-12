@@ -82,6 +82,5 @@ namespace Amigos.Data.WebAPI.Controllers
 
             return test;
         }
-
     }
 }
